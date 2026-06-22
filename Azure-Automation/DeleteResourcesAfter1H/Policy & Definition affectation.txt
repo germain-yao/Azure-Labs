@@ -1,0 +1,13 @@
+az policy assignment create \
+    --name AutoDelete-Lab \
+    --display-name "AutoDelete LAB" \
+    --policy AutoDelete-Lab-ResourceGroups \
+    --scope /subscriptions/<subscription-id> \
+    --assign-identity
+
+
+
+
+az policy remediation create \
+    --name AutoDelete-Remediation \
+    --policy-assignment AutoDelete-Lab
