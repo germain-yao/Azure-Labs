@@ -5,9 +5,10 @@ param location string
 param prefix string
 
 @secure()
+@description('SQL Server administrator password')
 param sqlPassword string
 
-resource sqlServer 'Microsoft.Sql/servers@2023-08-01-preview' = {
+resource sqlServer 'Microsoft.Sql/servers@2022-11-01-preview' = {
   name: '${toLower(prefix)}sql${uniqueString(resourceGroup().id)}'
   location: location
 
@@ -17,9 +18,10 @@ resource sqlServer 'Microsoft.Sql/servers@2023-08-01-preview' = {
   }
 }
 
-resource database 'Microsoft.Sql/servers/databases@2023-08-01-preview' = {
+resource database 'Microsoft.Sql/servers/databases@2022-11-01-preview' = {
   parent: sqlServer
   name: 'AFNT-EXAM-DB'
+  location: location
 
   sku: {
     name: 'Basic'
@@ -28,4 +30,6 @@ resource database 'Microsoft.Sql/servers/databases@2023-08-01-preview' = {
 }
 
 output sqlServerName string = sqlServer.name
+output sqlServerId string = sqlServer.id
 output sqlDatabaseName string = database.name
+output sqlDatabaseId string = database.id

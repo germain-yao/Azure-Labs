@@ -1,6 +1,6 @@
 #!/bin/bash
 
-RESOURCE_GROUP="rg-afnt-exam-dev"
+RESOURCE_GROUP="AFNT-RG-EXAM"
 
 az deployment group validate \
     --resource-group $RESOURCE_GROUP \

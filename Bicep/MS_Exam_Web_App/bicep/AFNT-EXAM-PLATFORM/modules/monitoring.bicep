@@ -4,7 +4,7 @@ param location string
 @description('Resource name prefix')
 param prefix string
 
-resource workspace 'Microsoft.OperationalInsights/workspaces@2023-09-01' = {
+resource workspace 'Microsoft.OperationalInsights/workspaces@2022-10-01' = {
   name: '${prefix}-law'
   location: location
 
@@ -28,5 +28,10 @@ resource appInsights 'Microsoft.Insights/components@2020-02-02' = {
   }
 }
 
+output workspaceName string = workspace.name
 output workspaceId string = workspace.id
-output appInsightsConnectionString string = appInsights.properties.ConnectionString
+
+output applicationInsightsName string = appInsights.name
+output applicationInsightsId string = appInsights.id
+
+output applicationInsightsConnectionString string = appInsights.properties.ConnectionString

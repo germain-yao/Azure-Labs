@@ -4,12 +4,17 @@ param location string
 @description('Resource name prefix')
 param prefix string
 
-resource staticWebApp 'Microsoft.Web/staticSites@2023-12-01' = {
-  name: '${prefix}-web'
+resource staticWebApp 'Microsoft.Web/staticSites@2022-09-01' = {
+  name: '${toLower(prefix)}-web'
   location: location
+
   sku: {
     name: 'Free'
     tier: 'Free'
+  }
+
+  properties: {
+    stagingEnvironmentPolicy: 'Enabled'
   }
 }
 

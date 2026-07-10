@@ -1,7 +1,7 @@
 #!/bin/bash
 
-RESOURCE_GROUP="rg-afnt-exam-dev"
-LOCATION="francecentral"
+RESOURCE_GROUP="AFNT-RG-EXAM"
+LOCATION="westeurope"
 
 echo "Connexion Azure..."
 az login
