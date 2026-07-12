@@ -13,6 +13,8 @@ export interface Answer {
 
     text: string;
 
+    order?: number;
+
 }
 
 export interface TableData {
@@ -49,13 +51,16 @@ export interface Question {
 
     question: string;
 
-    explanation: string;
+    explanation?: string;
 
     answers?: Answer[];
 
-    correctAnswer?: string;
-
-    correctAnswers?: string[];
+    /**
+     * Une seule propriété.
+     * SingleChoice : "A"
+     * MultipleChoice : ["A","C"]
+     */
+    correctAnswer?: string | string[];
 
     table?: TableData;
 

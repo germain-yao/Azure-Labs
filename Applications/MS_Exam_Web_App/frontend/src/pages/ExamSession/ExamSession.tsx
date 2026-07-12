@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useParams } from "react-router-dom";
 
 import {
@@ -13,29 +13,68 @@ import {
 import QuestionRenderer from "../../components/questions/QuestionRenderer";
 import ExamFinishDialog from "../../components/exam/ExamFinishDialog";
 
-import sc300Questions from "../../data/questions/sc-300.json";
+import { ExamEngine } from "../../engine/ExamEngine";
+import { ExamSession as EngineSession } from "../../engine/ExamSession";
 
 export default function ExamSession() {
 
     const { id } = useParams();
 
-    // Plus tard nous chargerons les questions selon la certification
-    const questions = sc300Questions;
+    const engine = useRef(new ExamEngine());
 
-    const [currentQuestion, setCurrentQuestion] = useState(0);
+    const [session, setSession] =
+        useState<EngineSession | null>(null);
 
-    const [finishDialogOpen, setFinishDialogOpen] = useState(false);
+    const [finishDialogOpen, setFinishDialogOpen] =
+        useState(false);
+
+    useEffect(() => {
+
+        const startedSession = engine.current.start(
+
+            id ?? "sc-300",
+
+            60
+
+        );
+
+        setSession({ ...startedSession });
+
+    }, [id]);
+
+    if (!session) {
+
+        return null;
+
+    }
+
+    const currentQuestion =
+        engine.current.getCurrentQuestion();
 
     const progress =
-        ((currentQuestion + 1) / questions.length) * 100;
+        engine.current.getProgress();
 
     const handleNext = () => {
 
-        if (currentQuestion < questions.length - 1) {
+        if (
 
-            setCurrentQuestion(currentQuestion + 1);
+            session.currentQuestion <
 
-        } else {
+            session.questions.length - 1
+
+        ) {
+
+            engine.current.next();
+
+            setSession({
+
+                ...engine.current.getSession()
+
+            });
+
+        }
+
+        else {
 
             setFinishDialogOpen(true);
 
@@ -45,11 +84,13 @@ export default function ExamSession() {
 
     const handlePrevious = () => {
 
-        if (currentQuestion > 0) {
+        engine.current.previous();
 
-            setCurrentQuestion(currentQuestion - 1);
+        setSession({
 
-        }
+            ...engine.current.getSession()
+
+        });
 
     };
 
@@ -57,7 +98,14 @@ export default function ExamSession() {
 
         setFinishDialogOpen(false);
 
-        alert("🎉 Ici nous calculerons bientôt le score.");
+        const result =
+            engine.current.finish();
+
+        alert(
+
+            `Score : ${result.score}%`
+
+        );
 
     };
 
@@ -73,14 +121,20 @@ export default function ExamSession() {
                 fontWeight="bold"
                 gutterBottom
             >
+
                 {id?.toUpperCase()} Exam
+
             </Typography>
 
             <Typography
                 color="text.secondary"
                 sx={{ mb: 2 }}
             >
-                Question {currentQuestion + 1} / {questions.length}
+
+                Question {session.currentQuestion + 1}
+                {" / "}
+                {session.questions.length}
+
             </Typography>
 
             <LinearProgress
@@ -102,44 +156,93 @@ export default function ExamSession() {
             >
 
                 <QuestionRenderer
-                    question={questions[currentQuestion]}
+
+                    question={currentQuestion}
+
                 />
 
             </Paper>
 
             <Box
+
                 sx={{
+
                     display: "flex",
+
                     justifyContent: "space-between",
+
                     mt: 4
+
                 }}
+
             >
 
                 <Button
+
                     variant="outlined"
-                    disabled={currentQuestion === 0}
+
+                    disabled={
+
+                        session.currentQuestion === 0
+
+                    }
+
                     onClick={handlePrevious}
+
                 >
+
                     Précédent
+
                 </Button>
 
                 <Button
+
                     variant="contained"
+
                     onClick={handleNext}
+
                 >
-                    {currentQuestion === questions.length - 1
-                        ? "Terminer l'examen"
-                        : "Suivant"}
+
+                    {
+
+                        session.currentQuestion ===
+
+                        session.questions.length - 1
+
+                            ? "Terminer"
+
+                            : "Suivant"
+
+                    }
+
                 </Button>
 
             </Box>
 
             <ExamFinishDialog
+
                 open={finishDialogOpen}
-                answered={questions.length}
-                total={questions.length}
-                onCancel={() => setFinishDialogOpen(false)}
+
+                answered={
+
+                    Object.keys(session.answers).length
+
+                }
+
+                total={
+
+                    session.questions.length
+
+                }
+
+                onCancel={() =>
+
+                    setFinishDialogOpen(false)
+
+                }
+
                 onConfirm={handleFinishExam}
+
             />
 
         </Container>

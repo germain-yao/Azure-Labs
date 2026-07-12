@@ -1,9 +1,6 @@
 import { ExamLoader } from "./ExamLoader";
-
 import { QuestionRandomizer } from "./QuestionRandomizer";
-
 import { ExamSession } from "./ExamSession";
-
 import { ResultCalculator } from "./ResultCalculator";
 
 export class ExamEngine {
@@ -17,26 +14,19 @@ export class ExamEngine {
     private session = new ExamSession();
 
     public start(
-
         certification: string,
-
         numberOfQuestions: number
-
     ): ExamSession {
 
         const questions = this.loader.load(certification);
 
-        this.session.questions = this.randomizer.take(
+        this.session.reset();
 
-            questions,
-
-            numberOfQuestions
-
-        );
-
-        this.session.currentQuestion = 0;
-
-        this.session.answers = {};
+        this.session.questions =
+            this.randomizer.take(
+                questions,
+                numberOfQuestions
+            );
 
         this.session.startedAt = new Date();
 
@@ -45,25 +35,35 @@ export class ExamEngine {
     }
 
     public answer(
-
         questionId: string,
-
         answer: string | string[]
-
     ): void {
 
         this.session.answers[questionId] = answer;
 
     }
 
+    public getAnswer(
+        questionId: string
+    ): string | string[] | undefined {
+
+        return this.session.answers[questionId];
+
+    }
+
+    public hasAnswer(
+        questionId: string
+    ): boolean {
+
+        return questionId in this.session.answers;
+
+    }
+
     public next(): void {
 
         if (
-
             this.session.currentQuestion <
-
             this.session.questions.length - 1
-
         ) {
 
             this.session.currentQuestion++;
@@ -75,9 +75,7 @@ export class ExamEngine {
     public previous(): void {
 
         if (
-
             this.session.currentQuestion > 0
-
         ) {
 
             this.session.currentQuestion--;
@@ -86,16 +84,33 @@ export class ExamEngine {
 
     }
 
+    public getCurrentQuestion() {
+
+        return this.session.questions[
+            this.session.currentQuestion
+        ];
+
+    }
+
+    public getProgress(): number {
+
+        return Math.round(
+            (
+                (this.session.currentQuestion + 1)
+                /
+                this.session.questions.length
+            ) * 100
+        );
+
+    }
+
     public finish() {
 
         this.session.finishedAt = new Date();
 
         return this.calculator.calculate(
-
             this.session.questions,
-
             this.session.answers
-
         );
 
     }
