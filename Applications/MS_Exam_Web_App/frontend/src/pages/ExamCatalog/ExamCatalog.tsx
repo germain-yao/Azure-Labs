@@ -1,15 +1,21 @@
-import { Typography } from "@mui/material";
+import { Container } from "@mui/material";
+
+import ExamHeader from "../../components/exam/ExamHeader";
 
 export default function ExamCatalog() {
 
     return (
 
-        <Typography
-            variant="h3"
-            fontWeight="bold"
+        <Container
+            maxWidth="lg"
+            sx={{
+                py: 6
+            }}
         >
-            Exam Catalog
-        </Typography>
+
+            <ExamHeader />
+
+        </Container>
 
     );
 
