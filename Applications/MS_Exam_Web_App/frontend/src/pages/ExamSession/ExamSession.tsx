@@ -11,6 +11,7 @@ import {
 } from "@mui/material";
 
 import QuestionRenderer from "../../components/questions/QuestionRenderer";
+import ExamFinishDialog from "../../components/exam/ExamFinishDialog";
 
 import sc300Questions from "../../data/questions/sc-300.json";
 
@@ -23,6 +24,8 @@ export default function ExamSession() {
 
     const [currentQuestion, setCurrentQuestion] = useState(0);
 
+    const [finishDialogOpen, setFinishDialogOpen] = useState(false);
+
     const progress =
         ((currentQuestion + 1) / questions.length) * 100;
 
@@ -34,7 +37,7 @@ export default function ExamSession() {
 
         } else {
 
-            alert("🎉 Examen terminé !");
+            setFinishDialogOpen(true);
 
         }
 
@@ -47,6 +50,14 @@ export default function ExamSession() {
             setCurrentQuestion(currentQuestion - 1);
 
         }
+
+    };
+
+    const handleFinishExam = () => {
+
+        setFinishDialogOpen(false);
+
+        alert("🎉 Ici nous calculerons bientôt le score.");
 
     };
 
@@ -122,6 +133,14 @@ export default function ExamSession() {
                 </Button>
 
             </Box>
+
+            <ExamFinishDialog
+                open={finishDialogOpen}
+                answered={questions.length}
+                total={questions.length}
+                onCancel={() => setFinishDialogOpen(false)}
+                onConfirm={handleFinishExam}
+            />
 
         </Container>
 
