@@ -15,6 +15,8 @@ import QuizIcon from "@mui/icons-material/Quiz";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
 import PlayArrowIcon from "@mui/icons-material/PlayArrow";
 
+import { useNavigate } from "react-router-dom";
+
 type Props = {
     certification: Certification;
 };
@@ -23,12 +25,18 @@ export default function CertificationCard({
     certification
 }: Props) {
 
+    const navigate = useNavigate();
+
     const chipColor: "success" | "primary" | "secondary" =
         certification.level === "Fundamentals"
             ? "success"
             : certification.level === "Associate"
                 ? "primary"
                 : "secondary";
+
+    const handleOpenCertification = () => {
+        navigate(`/exam/${certification.id}`);
+    };
 
     return (
 
@@ -47,7 +55,10 @@ export default function CertificationCard({
             }}
         >
 
-            <CardActionArea sx={{ height: "100%" }}>
+            <CardActionArea
+                sx={{ height: "100%" }}
+                onClick={handleOpenCertification}
+            >
 
                 <CardContent
                     sx={{
@@ -185,6 +196,10 @@ export default function CertificationCard({
                             fullWidth
                             variant="contained"
                             endIcon={<PlayArrowIcon />}
+                            onClick={(event) => {
+                                event.stopPropagation();
+                                handleOpenCertification();
+                            }}
                         >
                             Commencer
                         </Button>
