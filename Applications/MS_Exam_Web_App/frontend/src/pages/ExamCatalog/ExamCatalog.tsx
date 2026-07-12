@@ -4,6 +4,7 @@ import { useState } from "react";
 import ExamHeader from "../../components/exam/ExamHeader";
 import ExamSearch from "../../components/exam/ExamSearch";
 import ExamFilters from "../../components/exam/ExamFilters";
+import ExamGrid from "../../components/exam/ExamGrid";
 
 export default function ExamCatalog() {
 
@@ -20,11 +21,19 @@ export default function ExamCatalog() {
 
             <ExamHeader />
 
-            <ExamSearch />
+            <ExamSearch
+                value={search}
+                onChange={setSearch}
+            />
 
             <ExamFilters
                 category={category}
                 onChange={setCategory}
+            />
+
+            <ExamGrid
+                search={search}
+                category={category}
             />
 
         </Container>

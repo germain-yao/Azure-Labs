@@ -1,6 +1,14 @@
 import { Paper, TextField } from "@mui/material";
 
-export default function ExamSearch() {
+type Props = {
+    value: string;
+    onChange: (value: string) => void;
+};
+
+export default function ExamSearch({
+    value,
+    onChange
+}: Props) {
 
     return (
 
@@ -16,6 +24,8 @@ export default function ExamSearch() {
             <TextField
                 fullWidth
                 placeholder="Rechercher une certification"
+                value={value}
+                onChange={(e) => onChange(e.target.value)}
             />
 
         </Paper>
