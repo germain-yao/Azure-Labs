@@ -1,0 +1,132 @@
+[
+  {
+    "id": "sc300-q001",
+    "certificationId": "sc-300",
+    "type": "singleChoice",
+    "question": "Quel service Microsoft permet de gérer les identités et les accès dans Azure ?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Microsoft Entra ID"
+      },
+      {
+        "id": "B",
+        "text": "Azure Monitor"
+      },
+      {
+        "id": "C",
+        "text": "Azure Backup"
+      },
+      {
+        "id": "D",
+        "text": "Azure Site Recovery"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Microsoft Entra ID est le service de gestion des identités."
+  },
+  {
+    "id": "sc300-q002",
+    "certificationId": "sc-300",
+    "type": "singleChoice",
+    "question": "Quel protocole est utilisé par Microsoft Entra ID pour l'authentification unique ?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "SMTP"
+      },
+      {
+        "id": "B",
+        "text": "SAML"
+      },
+      {
+        "id": "C",
+        "text": "FTP"
+      },
+      {
+        "id": "D",
+        "text": "SNMP"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "SAML est largement utilisé pour le Single Sign-On."
+  },
+  {
+    "id": "sc300-q003",
+    "certificationId": "sc-300",
+    "type": "singleChoice",
+    "question": "Quel service permet de mettre en œuvre l'accès conditionnel ?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Microsoft Entra ID"
+      },
+      {
+        "id": "B",
+        "text": "Azure Storage"
+      },
+      {
+        "id": "C",
+        "text": "Azure Files"
+      },
+      {
+        "id": "D",
+        "text": "Azure DNS"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Les stratégies d'accès conditionnel sont gérées dans Microsoft Entra ID."
+  },
+  {
+    "id": "sc300-q004",
+    "certificationId": "sc-300",
+    "type": "singleChoice",
+    "question": "Quelle fonctionnalité réduit les risques liés aux comptes administrateurs ?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Azure Backup"
+      },
+      {
+        "id": "B",
+        "text": "Microsoft Entra PIM"
+      },
+      {
+        "id": "C",
+        "text": "Azure Bastion"
+      },
+      {
+        "id": "D",
+        "text": "Azure Firewall"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "PIM permet l'élévation des privilèges à la demande."
+  },
+  {
+    "id": "sc300-q005",
+    "certificationId": "sc-300",
+    "type": "singleChoice",
+    "question": "Quel mécanisme renforce la sécurité des connexions utilisateurs ?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "MFA"
+      },
+      {
+        "id": "B",
+        "text": "DHCP"
+      },
+      {
+        "id": "C",
+        "text": "NAT"
+      },
+      {
+        "id": "D",
+        "text": "DNS"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "L'authentification multifacteur renforce la sécurité."
+  }
+]
