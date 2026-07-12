@@ -1,4 +1,4 @@
-import { Certification } from "../types/certification";
+import type { Certification } from "../types/certification";
 
 import az900 from "../assets/certifications/az-900.png";
 import az104 from "../assets/certifications/az-104.png";
@@ -19,7 +19,7 @@ export const certifications: Certification[] = [
         title: "Azure Fundamentals",
         description: "Introduction aux services Microsoft Azure.",
         level: "Fundamentals",
-        category: "Azure",
+        category: "Cloud",
         duration: "45 min",
         questions: 40,
         passingScore: 700,
@@ -33,7 +33,7 @@ export const certifications: Certification[] = [
         title: "Azure Administrator",
         description: "Administration des ressources Azure.",
         level: "Associate",
-        category: "Azure",
+        category: "Cloud",
         duration: "120 min",
         questions: 60,
         passingScore: 700,
@@ -42,12 +42,12 @@ export const certifications: Certification[] = [
     },
 
     {
-        id: "AZ-305",
+        id: "az-305",
         code: "AZ-305",
         title: "Azure Solutions Architect",
         description: "Conception d'architectures Azure sécurisées et évolutives.",
         level: "Expert",
-        category: "Azure",
+        category: "Cloud",
         duration: "120 min",
         questions: 60,
         passingScore: 700,
@@ -56,12 +56,12 @@ export const certifications: Certification[] = [
     },
 
     {
-        id: "AZ-500",
+        id: "az-500",
         code: "AZ-500",
         title: "Azure Security Engineer",
         description: "Sécurisation des identités, des données et des réseaux Azure.",
         level: "Associate",
-        category: "Security",
+        category: "Sécurité",
         duration: "120 min",
         questions: 60,
         passingScore: 700,
@@ -70,12 +70,12 @@ export const certifications: Certification[] = [
     },
 
     {
-        id: "AZ-700",
+        id: "az-700",
         code: "AZ-700",
         title: "Azure Network Engineer",
         description: "Conception et administration des réseaux Azure.",
         level: "Associate",
-        category: "Azure",
+        category: "Network",
         duration: "120 min",
         questions: 60,
         passingScore: 700,
@@ -84,12 +84,12 @@ export const certifications: Certification[] = [
     },
 
     {
-        id: "AZ-800",
+        id: "az-800",
         code: "AZ-800",
         title: "Windows Server Hybrid Administrator",
         description: "Administration hybride de Windows Server.",
         level: "Associate",
-        category: "Windows",
+        category: "Système",
         duration: "120 min",
         questions: 60,
         passingScore: 700,
@@ -98,12 +98,12 @@ export const certifications: Certification[] = [
     },
 
     {
-        id: "AZ-801",
+        id: "az-801",
         code: "AZ-801",
         title: "Windows Server Hybrid Advanced Services",
         description: "Services avancés pour Windows Server hybride.",
         level: "Associate",
-        category: "Windows",
+        category: "Système",
         duration: "120 min",
         questions: 60,
         passingScore: 700,
@@ -112,12 +112,12 @@ export const certifications: Certification[] = [
     },
 
     {
-        id: "SC-100",
+        id: "sc-100",
         code: "SC-100",
         title: "Cybersecurity Architect",
         description: "Conception de stratégies de cybersécurité.",
         level: "Expert",
-        category: "Security",
+        category: "Sécurité",
         duration: "120 min",
         questions: 60,
         passingScore: 700,
@@ -126,12 +126,12 @@ export const certifications: Certification[] = [
     },
 
     {
-        id: "SC-200",
+        id: "sc-200",
         code: "SC-200",
         title: "Security Operations Analyst",
         description: "Analyse des opérations de sécurité avec Microsoft Sentinel.",
         level: "Associate",
-        category: "Security",
+        category: "Sécurité",
         duration: "120 min",
         questions: 60,
         passingScore: 700,
@@ -140,12 +140,12 @@ export const certifications: Certification[] = [
     },
 
     {
-        id: "SC-300",
+        id: "sc-300",
         code: "SC-300",
         title: "Identity and Access Administrator",
         description: "Gestion des identités et des accès avec Microsoft Entra ID.",
         level: "Associate",
-        category: "Security",
+        category: "Sécurité",
         duration: "120 min",
         questions: 60,
         passingScore: 700,

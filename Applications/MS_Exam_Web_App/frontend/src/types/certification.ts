@@ -8,9 +8,17 @@ export interface Certification {
 
     description: string;
 
-    level: "Fundamentals" | "Associate" | "Expert";
+    level:
+        | "Fundamentals"
+        | "Associate"
+        | "Expert";
 
-    category: "Azure" | "Security" | "Windows";
+    category:
+        | "Cloud"
+        | "Système"
+        | "Sécurité"
+        | "Network"
+        | "DevOps";
 
     duration: string;
 

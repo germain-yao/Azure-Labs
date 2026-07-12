@@ -5,8 +5,10 @@ import {
 
 import FilterListIcon from "@mui/icons-material/FilterList";
 import CloudIcon from "@mui/icons-material/Cloud";
+import ComputerIcon from "@mui/icons-material/Computer";
 import SecurityIcon from "@mui/icons-material/Security";
-import DnsIcon from "@mui/icons-material/Dns";
+import HubIcon from "@mui/icons-material/Hub";
+import BuildIcon from "@mui/icons-material/Build";
 
 type Props = {
     category: string;
@@ -24,7 +26,7 @@ export default function ExamFilters({
             sx={{
                 display: "flex",
                 gap: 2,
-                mb: 4,
+                mb: 5,
                 flexWrap: "wrap"
             }}
         >
@@ -38,27 +40,43 @@ export default function ExamFilters({
             </Button>
 
             <Button
-                variant={category === "Azure" ? "contained" : "outlined"}
+                variant={category === "Cloud" ? "contained" : "outlined"}
                 startIcon={<CloudIcon />}
-                onClick={() => onChange("Azure")}
+                onClick={() => onChange("Cloud")}
             >
-                Azure
+                Cloud
             </Button>
 
             <Button
-                variant={category === "Security" ? "contained" : "outlined"}
+                variant={category === "Système" ? "contained" : "outlined"}
+                startIcon={<ComputerIcon />}
+                onClick={() => onChange("Système")}
+            >
+                Système
+            </Button>
+
+            <Button
+                variant={category === "Sécurité" ? "contained" : "outlined"}
                 startIcon={<SecurityIcon />}
-                onClick={() => onChange("Security")}
+                onClick={() => onChange("Sécurité")}
             >
-                Security
+                Sécurité
             </Button>
 
             <Button
-                variant={category === "Windows" ? "contained" : "outlined"}
-                startIcon={<DnsIcon />}
-                onClick={() => onChange("Windows")}
+                variant={category === "Network" ? "contained" : "outlined"}
+                startIcon={<HubIcon />}
+                onClick={() => onChange("Network")}
             >
-                Windows
+                Network
+            </Button>
+
+            <Button
+                variant={category === "DevOps" ? "contained" : "outlined"}
+                startIcon={<BuildIcon />}
+                onClick={() => onChange("DevOps")}
+            >
+                DevOps
             </Button>
 
         </Box>

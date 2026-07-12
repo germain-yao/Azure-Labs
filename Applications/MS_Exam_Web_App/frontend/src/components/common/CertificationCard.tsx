@@ -23,7 +23,7 @@ export default function CertificationCard({
     certification
 }: Props) {
 
-    const chipColor =
+    const chipColor: "success" | "primary" | "secondary" =
         certification.level === "Fundamentals"
             ? "success"
             : certification.level === "Associate"
@@ -38,7 +38,7 @@ export default function CertificationCard({
                 height: "100%",
                 borderRadius: 4,
                 overflow: "hidden",
-                transition: ".3s",
+                transition: "0.3s",
 
                 "&:hover": {
                     transform: "translateY(-8px)",
@@ -58,33 +58,48 @@ export default function CertificationCard({
                     }}
                 >
 
+                    {/* Badge */}
+
                     <Box
-                        display="flex"
-                        justifyContent="center"
-                        mb={2}
+                        sx={{
+                            display: "flex",
+                            justifyContent: "center",
+                            mb: 2
+                        }}
                     >
 
-                        <img
+                        <Box
+                            component="img"
                             src={certification.badge}
                             alt={certification.code}
-                            width={110}
+                            sx={{
+                                width: 110
+                            }}
                         />
 
                     </Box>
 
+                    {/* Code */}
+
                     <Typography
                         variant="h5"
                         align="center"
-                        fontWeight="bold"
                         gutterBottom
+                        sx={{
+                            fontWeight: "bold"
+                        }}
                     >
                         {certification.code}
                     </Typography>
 
+                    {/* Niveau */}
+
                     <Box
-                        display="flex"
-                        justifyContent="center"
-                        mb={2}
+                        sx={{
+                            display: "flex",
+                            justifyContent: "center",
+                            mb: 2
+                        }}
                     >
 
                         <Chip
@@ -94,6 +109,8 @@ export default function CertificationCard({
                         />
 
                     </Box>
+
+                    {/* Titre */}
 
                     <Typography
                         align="center"
@@ -106,21 +123,27 @@ export default function CertificationCard({
                         {certification.title}
                     </Typography>
 
+                    {/* Informations */}
+
                     <Stack
                         spacing={1}
-                        alignItems="center"
-                        sx={{ mb: 3 }}
+                        sx={{
+                            mb: 3,
+                            alignItems: "center"
+                        }}
                     >
 
                         <Box
-                            display="flex"
-                            gap={1}
-                            alignItems="center"
+                            sx={{
+                                display: "flex",
+                                alignItems: "center",
+                                gap: 1
+                            }}
                         >
 
                             <QuizIcon
-                                fontSize="small"
                                 color="primary"
+                                fontSize="small"
                             />
 
                             <Typography variant="body2">
@@ -130,14 +153,16 @@ export default function CertificationCard({
                         </Box>
 
                         <Box
-                            display="flex"
-                            gap={1}
-                            alignItems="center"
+                            sx={{
+                                display: "flex",
+                                alignItems: "center",
+                                gap: 1
+                            }}
                         >
 
                             <AccessTimeIcon
-                                fontSize="small"
                                 color="primary"
+                                fontSize="small"
                             />
 
                             <Typography variant="body2">
@@ -148,7 +173,13 @@ export default function CertificationCard({
 
                     </Stack>
 
-                    <Box mt="auto">
+                    {/* Bouton */}
+
+                    <Box
+                        sx={{
+                            mt: "auto"
+                        }}
+                    >
 
                         <Button
                             fullWidth
