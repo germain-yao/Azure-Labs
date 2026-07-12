@@ -1,0 +1,2656 @@
+[
+    {
+        "id": "question-1",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Vous disposez d'un locataire Azure Active Directory (Azure AD) contenant les objets suivants : ✑ Un appareil nommé Device1 ✑ Des utilisateurs nommés User1, User2, User3, User4 et User5 ✑ Des groupes nommés Group1, Group2, Group3, Group4 et Group5 Les groupes sont configurés comme indiqué dans le tableau suivant. À quels groupes peut-on attribuer directement une licence Microsoft Office 365 Entreprise E5 ?",
+        "answers": [
+            {
+                "id": "A",
+                "text": "Groupes 1 et 4 uniquement"
+            },
+            {
+                "id": "B",
+                "text": "Groupes 1, 2, 3, 4 et 5"
+            },
+            {
+                "id": "C",
+                "text": "Groupes 1 et 2 uniquement"
+            },
+            {
+                "id": "D",
+                "text": "Groupe 1 uniquement"
+            }
+        ],
+        "correctAnswer": "B"
+    },
+    {
+        "id": "question-2",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Votre organisation Microsoft Exchange utilise l'espace d'adressage SMTP contoso.com. Plusieurs utilisateurs utilisent leur adresse e-mail contoso.com pour s'inscrire en libre-service à Azure Active Directory (Azure AD). Vous obtenez des privilèges d'administrateur global sur le locataire Azure AD contenant les utilisateurs auto-signés. Vous devez empêcher les utilisateurs de créer des comptes utilisateur dans le locataire Azure AD contoso.com pour s'inscrire en libre-service aux services Microsoft 365. Quelle applet de commande PowerShell devez-vous utiliser ?",
+        "answers": [
+            {
+                "id": "A",
+                "text": "Set-MsolCompanySettings"
+            },
+            {
+                "id": "B",
+                "text": "Set-MsolDomainFederationSettings"
+            },
+            {
+                "id": "C",
+                "text": "Update-MsolfederatedDomain"
+            },
+            {
+                "id": "D",
+                "text": "Set-MsolDomain"
+            }
+        ],
+        "correctAnswer": "A"
+    },
+    {
+        "id": "question-3",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Vous disposez d'un client Microsoft 365 utilisant le domaine fabrikam.com. Les paramètres d'invitation d'invités pour Azure Active Directory (Azure AD) sont configurés comme indiqué dans l'illustration. (Cliquez sur l'onglet Illustrer.) Un utilisateur nommé bsmith@fabrikam.com partage une bibliothèque de documents Microsoft SharePoint Online avec les utilisateurs indiqués dans le tableau suivant. Quels utilisateurs recevront un code d'accès par e-mail ?",
+        "answers": [
+            {
+                "id": "A",
+                "text": "Utilisateur 2 uniquement"
+            },
+            {
+                "id": "B",
+                "text": "Utilisateur 1 uniquement"
+            },
+            {
+                "id": "C",
+                "text": "Utilisateurs 1 et 2 uniquement"
+            },
+            {
+                "id": "D",
+                "text": "Utilisateurs 1, 2 et 3"
+            }
+        ],
+        "correctAnswer": "B"
+    },
+    {
+        "id": "question-4",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Vous avez 2 500 utilisateurs auxquels sont attribuées des licences Microsoft Office 365 Entreprise E3. Ces licences sont attribuées individuellement à chaque utilisateur. Depuis le panneau « Groupes » du centre d'administration Azure Active Directory, attribuez des licences Microsoft 365 Entreprise E5 aux utilisateurs. Vous devez supprimer les licences Office 365 Entreprise E3 des utilisateurs en minimisant les efforts administratifs. Que devriez-vous utiliser ?",
+        "answers": [
+            {
+                "id": "A",
+                "text": "Le panneau Gouvernance des identités du centre d'administration Azure Active Directory"
+            },
+            {
+                "id": "B",
+                "text": "L'applet de commande Set-AzureAdUser"
+            },
+            {
+                "id": "C",
+                "text": "Le panneau Licences du centre d'administration Azure Active Directory"
+            },
+            {
+                "id": "D",
+                "text": "L'applet de commande Set-WindowsProductKey"
+            }
+        ],
+        "correctAnswer": "C"
+    },
+    {
+        "id": "question-5",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Vous disposez d'un locataire Microsoft 365 nommé contoso.com. L'accès utilisateur invité est activé. Les utilisateurs sont invités à collaborer avec contoso.com, comme indiqué dans le tableau suivant. Depuis les paramètres de collaboration externe du centre d'administration Azure Active Directory, configurez les paramètres de restrictions de collaboration comme indiqué dans l'illustration suivante. Depuis un site Microsoft SharePoint Online, un utilisateur invite user3@adatum.com à rejoindre le site. Pour chacune des affirmations suivantes, sélectionnez Oui si elle est vraie. Sinon, sélectionnez Non. REMARQUE : Chaque sélection correcte rapporte un point. Zone sensible :",
+        "answers": [],
+        "correctAnswer": ""
+    },
+    {
+        "id": "question-6",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Vous disposez d'un locataire Azure Active Directory (Azure AD) nommé contoso.com. Vous prévoyez d'inviter en masse des utilisateurs Azure AD de collaboration interentreprises (B2B). Quels sont les deux paramètres à inclure lors de la création de l'invitation en masse ? Chaque bonne réponse présente une partie de la solution. REMARQUE : Chaque bonne réponse rapporte un point.",
+        "answers": [
+            {
+                "id": "A",
+                "text": "Adresse e-mail"
+            },
+            {
+                "id": "B",
+                "text": "URL de redirection"
+            },
+            {
+                "id": "C",
+                "text": "Nom d'utilisateur"
+            },
+            {
+                "id": "D",
+                "text": "Clé partagée"
+            }
+        ],
+        "correctAnswer": "AB"
+    },
+    {
+        "id": "question-7",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Vous disposez d’un locataire Azure Active Directory (Azure AD) qui contient les objets affichés dans le tableau suivant. Quels objets pouvez-vous ajouter comme membres au Groupe 3 ?",
+        "answers": [
+            {
+                "id": "A",
+                "text": "Utilisateur 2 et Groupe 2 uniquement"
+            },
+            {
+                "id": "B",
+                "text": "Utilisateur 2, Groupe 1 et Groupe 2 uniquement"
+            },
+            {
+                "id": "C",
+                "text": "Utilisateur 1, Utilisateur 2, Groupe 1 et Groupe 2"
+            },
+            {
+                "id": "D",
+                "text": "Utilisateur 1 et Utilisateur 2 uniquement."
+            }
+        ],
+        "correctAnswer": "E"
+    },
+    {
+        "id": "question-8",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "GLISSER-DÉPOSER Vous disposez d'une organisation Microsoft Exchange sur site utilisant l'espace d'adressage SMTP contoso.com. Vous découvrez que les utilisateurs utilisent leur adresse e-mail pour s'inscrire en libre-service aux services Microsoft 365. Vous devez obtenir les privilèges d'administrateur global sur le locataire Azure Active Directory (Azure AD) contenant les utilisateurs auto-signés. Quelles sont les quatre actions à effectuer dans l'ordre ? Pour répondre, déplacez les actions appropriées de la liste vers la zone de réponse et organisez-les dans le bon ordre. Sélectionner et placer :",
+        "answers": [],
+        "correctAnswer": ""
+    },
+    {
+        "id": "question-9",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Vous disposez d'un locataire Azure Active Directory (Azure AD) contenant un utilisateur nommé Utilisateur1 et les groupes indiqués dans le tableau suivant. Dans le locataire, vous créez les groupes indiqués dans le tableau suivant. Quels membres pouvez-vous ajouter aux groupes A et B ? Pour répondre, sélectionnez les options appropriées dans la zone de réponse. REMARQUE : Chaque bonne sélection rapporte un point. Zone sensible :",
+        "answers": [],
+        "correctAnswer": ""
+    },
+    {
+        "id": "question-10",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Remarque : Cette question fait partie d’une série de questions présentant le même scénario. Chaque question de la série contient une solution unique susceptible d’atteindre les objectifs fixés. Certains ensembles de questions peuvent avoir plusieurs solutions correctes, tandis que d’autres peuvent ne pas en avoir. Après avoir répondu à une question de cette section, vous ne pourrez plus y revenir. Par conséquent, ces questions n’apparaîtront pas dans l’écran de révision. Vous disposez d’une forêt Active Directory synchronisée avec un locataire Azure Active Directory (Azure AD). Vous constatez que lorsqu’un compte utilisateur est désactivé dans Active Directory, il peut toujours s’authentifier auprès d’Azure AD pendant 30 minutes maximum. Vous devez vous assurer que lorsqu’un compte utilisateur est désactivé dans Active Directory, il est immédiatement empêché de s’authentifier auprès d’Azure AD. Solution : Vous configurez la réécriture du mot de passe. Est-ce que cela atteint l’objectif ?",
+        "answers": [
+            {
+                "id": "A",
+                "text": "Yes"
+            },
+            {
+                "id": "B",
+                "text": "No"
+            }
+        ],
+        "correctAnswer": "B"
+    },
+    {
+        "id": "question-11",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Remarque : Cette question fait partie d’une série de questions présentant le même scénario. Chaque question de la série contient une solution unique susceptible d’atteindre les objectifs fixés. Certains ensembles de questions peuvent avoir plusieurs solutions correctes, tandis que d’autres peuvent ne pas en avoir. Après avoir répondu à une question de cette section, vous ne pourrez plus y revenir. Par conséquent, ces questions n’apparaîtront pas dans l’écran de révision. Vous disposez d’une forêt Active Directory synchronisée avec un locataire Azure Active Directory (Azure AD). Vous constatez que lorsqu’un compte utilisateur est désactivé dans Active Directory, l’utilisateur désactivé peut toujours s’authentifier auprès d’Azure AD pendant 30 minutes maximum. Vous devez vous assurer que lorsqu’un compte utilisateur est désactivé dans Active Directory, il est immédiatement empêché de s’authentifier auprès d’Azure AD. Solution : Vous configurez l’authentification directe. Est-ce que cela atteint l’objectif ?",
+        "answers": [
+            {
+                "id": "A",
+                "text": "Oui"
+            },
+            {
+                "id": "B",
+                "text": "Non"
+            }
+        ],
+        "correctAnswer": "A"
+    },
+    {
+        "id": "question-12",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Remarque : Cette question fait partie d’une série de questions présentant le même scénario. Chaque question de la série contient une solution unique susceptible d’atteindre les objectifs fixés. Certains ensembles de questions peuvent avoir plusieurs solutions correctes, tandis que d’autres peuvent ne pas en avoir. Après avoir répondu à une question de cette section, vous ne pourrez plus y revenir. Par conséquent, ces questions n’apparaîtront pas dans l’écran de révision. Vous disposez d’un locataire Azure Active Directory (Azure AD) synchronisé avec une forêt Active Directory. Vous constatez que lorsqu’un compte utilisateur est désactivé dans Active Directory, il peut toujours s’authentifier auprès d’Azure AD pendant 30 minutes maximum. Vous devez vous assurer que lorsqu’un compte utilisateur est désactivé dans Active Directory, il est immédiatement empêché de s’authentifier auprès d’Azure AD. Solution : Vous configurez des stratégies d’accès conditionnel. Est-ce que cela atteint l’objectif ?",
+        "answers": [
+            {
+                "id": "A",
+                "text": "Oui"
+            },
+            {
+                "id": "B",
+                "text": "Non"
+            }
+        ],
+        "correctAnswer": "B"
+    },
+    {
+        "id": "question-13",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Vous disposez d'un locataire Azure Active Directory (Azure AD) contenant les objets suivants : ✑ Un appareil nommé Device1 ✑ Des utilisateurs nommés User1, User2, User3, User4 et User5 Cinq groupes nommés Group1, Group2, Group3, Group4 et Group5 Les groupes sont configurés comme indiqué dans le tableau suivant. Combien de licences sont utilisées si vous attribuez la licence Microsoft 365 Entreprise E5 au Groupe 1 ?",
+        "answers": [
+            {
+                "id": "A",
+                "text": "0"
+            },
+            {
+                "id": "B",
+                "text": "2"
+            },
+            {
+                "id": "C",
+                "text": "3"
+            },
+            {
+                "id": "D",
+                "text": "4"
+            }
+        ],
+        "correctAnswer": "B"
+    },
+    {
+        "id": "question-14",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Vous disposez d'un locataire Azure Active Directory (Azure AD) nommé contoso.com qui contient une application d'entreprise Azure AD nommée App1. Un prestataire utilise les informations d'identification user1@outlook.com. Vous devez vous assurer que vous pouvez lui fournir l'accès à App1. Il doit pouvoir s'authentifier avec user1@outlook.com. Que faire ?",
+        "answers": [
+            {
+                "id": "A",
+                "text": "Exécutez l'applet de commande New-AzADUser."
+            },
+            {
+                "id": "B",
+                "text": "Configurez les paramètres de collaboration externe."
+            },
+            {
+                "id": "C",
+                "text": "Ajoutez un fournisseur d'identité WS-Fed."
+            },
+            {
+                "id": "D",
+                "text": "Créez un compte utilisateur invité dans contoso.com."
+            }
+        ],
+        "correctAnswer": "D"
+    },
+    {
+        "id": "question-15",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Votre réseau contient une forêt Active Directory nommée contoso.com, liée à un locataire Azure Active Directory (Azure AD) nommé contoso.com via Azure AD Connect. Vous devez empêcher la synchronisation des utilisateurs dont l'attribut extensionAttribute15 est défini sur NoSync. Que faire dans Azure AD Connect ?",
+        "answers": [
+            {
+                "id": "A",
+                "text": "Créer une règle de synchronisation entrante pour le connecteur Windows Azure Active Directory."
+            },
+            {
+                "id": "B",
+                "text": "Configurer un profil d'exécution d'importation complète."
+            },
+            {
+                "id": "C",
+                "text": "Créer une règle de synchronisation entrante pour le connecteur des services de domaine Active Directory."
+            },
+            {
+                "id": "D",
+                "text": "Configurer un profil d'exécution d'exportation."
+            }
+        ],
+        "correctAnswer": "C"
+    },
+    {
+        "id": "question-16",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Votre réseau contient un domaine Active Directory local synchronisé avec un locataire Azure Active Directory (Azure AD). Ce locataire contient les utilisateurs indiqués dans le tableau suivant. Tous les utilisateurs travaillent à distance. Azure AD Connect est configuré dans Azure AD comme illustré ci-dessous. La connectivité du domaine local à Internet est perdue. Quels utilisateurs peuvent se connecter à Azure AD ?",
+        "answers": [
+            {
+                "id": "A",
+                "text": "Utilisateurs 1 et 3 uniquement ;"
+            },
+            {
+                "id": "B",
+                "text": "Utilisateur 1 uniquement ;"
+            },
+            {
+                "id": "C",
+                "text": "Utilisateurs 1, 2 et 3 ;"
+            },
+            {
+                "id": "D",
+                "text": "Utilisateurs 1 et 2 uniquement ;"
+            }
+        ],
+        "correctAnswer": "A"
+    },
+    {
+        "id": "question-17",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Remarque : Cette question fait partie d’une série de questions présentant le même scénario. Chaque question de la série contient une solution unique susceptible d’atteindre les objectifs fixés. Certains ensembles de questions peuvent avoir plusieurs solutions correctes, tandis que d’autres peuvent ne pas en avoir. Après avoir répondu à une question de cette section, vous ne pourrez plus y revenir. Par conséquent, ces questions n’apparaîtront pas dans l’écran de révision. Vous disposez d’une forêt Active Directory synchronisée avec un locataire Azure Active Directory (Azure AD). Vous constatez que lorsqu’un compte utilisateur est désactivé dans Active Directory, il peut toujours s’authentifier auprès d’Azure AD pendant 30 minutes maximum. Vous devez vous assurer que lorsqu’un compte utilisateur est désactivé dans Active Directory, il est immédiatement empêché de s’authentifier auprès d’Azure AD. Solution : Vous configurez la protection par mot de passe Azure AD. Est-ce que cela atteint l’objectif ?",
+        "answers": [
+            {
+                "id": "A",
+                "text": "Oui"
+            },
+            {
+                "id": "B",
+                "text": "Non"
+            }
+        ],
+        "correctAnswer": "B"
+    },
+    {
+        "id": "question-18",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Votre réseau contient un domaine Active Directory local nommé contoso.com. Ce domaine contient les objets présentés dans le tableau suivant. Vous installez Azure AD Connect. Configurez les paramètres de filtrage des domaines et des unités d'organisation (UO) comme indiqué dans l'illustration « Filtrage des domaines et des unités d'organisation ». (Cliquez sur l'onglet « Filtrage des domaines et des unités d'organisation ».) Configurez les paramètres de filtrage des utilisateurs et des appareils comme indiqué dans l'illustration correspondante. (Cliquez sur l'onglet « Filtrer les utilisateurs et les appareils ».) Pour chacune des affirmations suivantes, sélectionnez Oui si elle est vraie. Sinon, sélectionnez Non. REMARQUE : Chaque réponse correcte rapporte un point.",
+        "answers": [],
+        "correctAnswer": ""
+    },
+    {
+        "id": "question-19",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Vous disposez d'un locataire Azure Active Directory (Azure AD) nommé contoso.com. Vous devez vous assurer que la tarification des identités externes Azure AD est basée sur le nombre d'utilisateurs actifs mensuels (MAU). Que devez-vous configurer ?",
+        "answers": [
+            {
+                "id": "A",
+                "text": "Un flux utilisateur"
+            },
+            {
+                "id": "B",
+                "text": "Les conditions d'utilisation"
+            },
+            {
+                "id": "C",
+                "text": "Un abonnement lié"
+            },
+            {
+                "id": "D",
+                "text": "Une vérification des accès"
+            }
+        ],
+        "correctAnswer": "C"
+    },
+    {
+        "id": "question-20",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "GLISSER-DÉPOSER Vous disposez d'un nouveau client Microsoft 365 utilisant le nom de domaine contoso.onmicrosoft.com. Vous enregistrez le nom contoso.com auprès d'un bureau d'enregistrement de domaines. Vous devez utiliser contoso.com comme nom de domaine par défaut pour les nouveaux utilisateurs Microsoft 365. Quelles sont les quatre actions à effectuer dans l'ordre ? Pour répondre, déplacez les actions appropriées de la liste vers la zone de réponse et organisez-les dans le bon ordre. Sélectionner et placer :",
+        "answers": [],
+        "correctAnswer": ""
+    },
+    {
+        "id": "question-21",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Vous avez un abonnement Microsoft 365.Vous devez vous assurer que lorsque les utilisateurs accèdent au portail Microsoft 365 depuis Microsoft Edge et que leur langue de navigateur est définie sur l'espagnol, ils se voient présenter un formulaire de connexion en espagnol. Que devez-vous faire dans le centre d'administration Microsoft Entra ?",
+        "answers": [
+            {
+                "id": "A",
+                "text": "Dans les paramètres des utilisateurs, configurez le paramètre de localisation d'utilisation."
+            },
+            {
+                "id": "B",
+                "text": "Dans Accès global sécurisé, configurez les paramètres de gestion des sessions."
+            },
+            {
+                "id": "C",
+                "text": "Configurez les paramètres de marque de l'entreprise."
+            },
+            {
+                "id": "D",
+                "text": "Créez une politique d'accès conditionnel."
+            }
+        ],
+        "correctAnswer": "C"
+    },
+    {
+        "id": "question-22",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "FAIRE GLISSER ET DÉPOSER Vous avez un abonnement Microsoft 365 E5 qui contient trois utilisateurs nommés Utilisateur1, Utilisateur2 et Utilisateur3.Vous devez configurer les utilisateurs comme indiqué dans le tableau suivant. Quel portail devez-vous utiliser pour configurer chaque utilisateur ? Pour répondre, faites glisser les portails appropriés vers les utilisateurs corrects. Chaque portail peut être utilisé une fois, plusieurs fois, ou pas du tout. Vous devrez peut-être faire glisser la barre de séparation entre les panneaux ou faire défiler pour voir le contenu. REMARQUE : Chaque sélection correcte vaut un point. Sélectionnez et placez :",
+        "answers": [],
+        "correctAnswer": ""
+    },
+    {
+        "id": "question-23",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Vous avez une forêt Active Directory qui se synchronise avec un locataire Azure Active Directory (Azure AD). Le locataire utilise pass-through authentication.. Une politique de sécurité d'entreprise stipule ce qui suit : ✑ Les contrôleurs de domaine ne doivent jamais communiquer directement avec Internet. ✑ Seul le logiciel nécessaire doit être installé sur les serveurs. Le domaine Active Directory contient les serveurs sur site indiqués dans le tableau suivant. Vous devez vous assurer que les utilisateurs peuvent s'authentifier à Azure AD si un serveur échoue. Sur quel serveur devez-vous installer un agent d'authentification pass-through supplémentaire ?",
+        "answers": [
+            {
+                "id": "A",
+                "text": "Serveur4"
+            },
+            {
+                "id": "B",
+                "text": "Serveur2"
+            },
+            {
+                "id": "C",
+                "text": "Serveur1"
+            },
+            {
+                "id": "D",
+                "text": "Serveur3"
+            }
+        ],
+        "correctAnswer": "A"
+    },
+    {
+        "id": "question-24",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Vous avez un locataire Azure Active Directory (Azure AD) nommé contoso.com qui contient une application d'entreprise Azure AD nommée App1. Un sous-traitant utilise les identifiants de user1@outlook.com. Vous devez vous assurer que vous pouvez fournir au sous-traitant un accès à App1. Le sous-traitant doit être en mesure de s'authentifier en tant que user1@outlook.com. Que devez-vous faire?",
+        "answers": [
+            {
+                "id": "A",
+                "text": "Exécuter la commande New-AzureADMSInvitation."
+            },
+            {
+                "id": "B",
+                "text": "Configurer les paramètres de collaboration externe."
+            },
+            {
+                "id": "C",
+                "text": "Ajouter un fournisseur d'identité WS-Fed."
+            },
+            {
+                "id": "D",
+                "text": "Implémenter Azure AD Connect."
+            }
+        ],
+        "correctAnswer": "A"
+    },
+    {
+        "id": "question-25",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Vous avez un locataire Microsoft Entra nommé contoso.com qui contient une application d'entreprise nommée App1.Un entrepreneur utilise les identifiants de user1@outlook.com.Vous devez vous assurer que vous pouvez fournir à l'entrepreneur un accès à App1. L'entrepreneur doit être en mesure de s'authentifier en tant que user1@outlook.com.Que devez-vous faire ?",
+        "answers": [
+            {
+                "id": "A",
+                "text": "Mettre en œuvre la synchronisation Microsoft Entra Connect."
+            },
+            {
+                "id": "B",
+                "text": "Ajouter un nom de domaine personnalisé à contoso.com."
+            },
+            {
+                "id": "C",
+                "text": "Mettre en œuvre le proxy d'application Microsoft Entra."
+            },
+            {
+                "id": "D",
+                "text": "Exécuter la cmdlet New-MgInvitation."
+            }
+        ],
+        "correctAnswer": "D"
+    },
+    {
+        "id": "question-26",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Vous avez un locataire Azure Active Directory (Azure AD) et une application web Azure nommée App1.Vous devez fournir aux utilisateurs invités un processus d'inscription en libre-service pour App1. La solution doit répondre aux exigences suivantes : ✑ Les utilisateurs invités doivent pouvoir s'inscrire en utilisant un mot de passe à usage unique. ✑ Les utilisateurs doivent fournir leur prénom, nom de famille, ville et adresse e-mail lors du processus d'inscription. Que devez-vous configurer dans le centre d'administration Azure Active Directory pour chaque exigence ? Pour répondre, sélectionnez les options appropriées dans le domaine de réponse.REMARQUE : Chaque sélection correcte vaut un point.Zone chaude :",
+        "answers": [],
+        "correctAnswer": ""
+    },
+    {
+        "id": "question-27",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Vous avez un locataire Azure Active Directory (Azure AD). Vous devez créer en masse 25 nouveaux comptes utilisateurs en téléchargeant un fichier modèle. Quelles propriétés sont requises dans le fichier modèle ?",
+        "answers": [
+            {
+                "id": "A",
+                "text": "displayName, identityIssuer, usageLocation et userType"
+            },
+            {
+                "id": "B",
+                "text": "accountEnabled, givenName, surname et userPrincipalName"
+            },
+            {
+                "id": "C",
+                "text": "accountEnabled, displayName, userPrincipalName et passwordProfile"
+            },
+            {
+                "id": "D",
+                "text": "accountEnabled, passwordProfile, usageLocation et userPrincipalName"
+            }
+        ],
+        "correctAnswer": "C"
+    },
+    {
+        "id": "question-28",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Votre réseau sur site contient un domaine Active Directory Domain Services (AD DS). Le domaine contient des ordinateurs exécutant Windows 11.Vous avez un abonnement Microsoft 365 E5.Vous prévoyez d'activer la liaison hybride et d'inscrire les ordinateurs dans Microsoft Intune.Vous devez recommander le logiciel qui devrait être déployé sur le domaine et les actions qui devraient être effectuées dans Intune.Que devriez-vous inclure dans la recommandation ? Pour répondre, sélectionnez les options appropriées dans la zone de réponse. REMARQUE : Chaque sélection correcte vaut un point.",
+        "answers": [],
+        "correctAnswer": ""
+    },
+    {
+        "id": "question-29",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "FAIRE GLISSER DÉPOSER Vous devez résoudre les problèmes récents liés à la sécurité.Que devez-vous configurer pour chaque incident ? Pour répondre, faites glisser les types de politique appropriés vers les bons problèmes. Chaque type de politique peut être utilisé une fois, plusieurs fois ou pas du tout. Vous devrez peut-être faire glisser la barre de séparation entre les volets ou faire défiler pour voir le contenu. REMARQUE : Chaque sélection correcte vaut un point. Sélectionner et placer :",
+        "answers": [],
+        "correctAnswer": ""
+    },
+    {
+        "id": "question-30",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "POINT D'ACCÈS Vous avez un locataire Azure Active Directory (Azure AD) qui contient les utilisateurs montrés dans le tableau suivant. Pour quels utilisateurs pouvez-vous configurer la propriété Titre du poste et la propriété Emplacement d'utilisation dans Azure AD ? Pour répondre, sélectionnez les options appropriées dans la zone de réponse. REMARQUE : Chaque sélection correcte vaut un point.",
+        "answers": [],
+        "correctAnswer": ""
+    },
+    {
+        "id": "question-31",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Vous disposez d'un locataire Azure Active Directory (Azure AD) qui contient un utilisateur nommé Utilisateur1. Vous devez vous assurer que cet utilisateur peut créer de nouveaux catalogues et ajouter des ressources à ses catalogues. Que devez-vous faire ?",
+        "answers": [
+            {
+                "id": "A",
+                "text": "Dans le panneau « Rôles et administrateurs », modifiez le rôle d'administrateur de groupes."
+            },
+            {
+                "id": "B",
+                "text": "Dans le panneau « Rôles et administrateurs », modifiez le rôle d'administrateur de support de service."
+            },
+            {
+                "id": "C",
+                "text": "Dans le panneau « Gouvernance des identités », modifiez les paramètres de gestion des droits."
+            },
+            {
+                "id": "D",
+                "text": "Dans le panneau « Gouvernance des identités », modifiez les rôles et les administrateurs du catalogue général."
+            }
+        ],
+        "correctAnswer": "C"
+    },
+    {
+        "id": "question-32",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Votre réseau contient un domaine Active Directory local synchronisé avec un locataire Azure Active Directory (Azure AD). Les utilisateurs se connectent aux ordinateurs Windows 10 joints au domaine. Vous prévoyez de mettre en œuvre l'authentification unique transparente Azure AD (Azure AD Seamless SSO). Vous devez configurer les ordinateurs Windows 10 pour qu'ils prennent en charge l'authentification unique transparente Azure AD. Que faire ?",
+        "answers": [
+            {
+                "id": "A",
+                "text": "Configurer les options de connexion depuis l'application Paramètres."
+            },
+            {
+                "id": "B",
+                "text": "Activer l'itinérance d'état d'entreprise."
+            },
+            {
+                "id": "C",
+                "text": "Modifier les paramètres de la zone intranet locale."
+            },
+            {
+                "id": "D",
+                "text": "Installer l'agent d'authentification Azure AD Connect."
+            }
+        ],
+        "correctAnswer": "C"
+    },
+    {
+        "id": "question-33",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Votre entreprise compte deux divisions : Contoso Est et Contoso Ouest. L’architecture d’identité Microsoft 365 de ces deux divisions est présentée dans le tableau suivant. Vous devez attribuer aux utilisateurs de la division Contoso Est l'accès aux sites Microsoft SharePoint Online du locataire Contoso Ouest. La solution ne doit pas nécessiter de licences Microsoft 365 supplémentaires. Que faire ?",
+        "answers": [
+            {
+                "id": "A",
+                "text": "Configurer le proxy d'application Azure AD dans le locataire Contoso Ouest."
+            },
+            {
+                "id": "B",
+                "text": "Inviter les utilisateurs Contoso Est en tant qu'invités dans le locataire Contoso Ouest."
+            },
+            {
+                "id": "C",
+                "text": "Déployer un deuxième serveur Azure AD Connect sur Contoso Est et configurer le serveur pour synchroniser la forêt Active Directory de Contoso Est avec le locataire Contoso Ouest."
+            },
+            {
+                "id": "D",
+                "text": "Configurer le serveur Azure AD Connect existant dans Contoso Est pour synchroniser la forêt Active Directory de Contoso Est avec le locataire Contoso Ouest."
+            }
+        ],
+        "correctAnswer": "B"
+    },
+    {
+        "id": "question-34",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Vous disposez d'un abonnement Microsoft 365 E5 avec deux utilisateurs, Utilisateur1 et Utilisateur2. Vous devez vous assurer que l'Utilisateur1 peut créer des révisions d'accès pour les groupes et que l'Utilisateur2 peut consulter l'historique de toutes les révisions d'accès effectuées. La solution doit utiliser le principe du moindre privilège. Quel rôle attribuer à chaque utilisateur ? Pour répondre, faites glisser les rôles appropriés vers les utilisateurs concernés. Chaque rôle peut être utilisé une fois, plusieurs fois, ou pas du tout. Vous devrez peut-être faire glisser la barre de séparation entre les volets ou faire défiler l'écran pour afficher le contenu. REMARQUE : Chaque sélection correcte rapporte un point.",
+        "answers": [],
+        "correctAnswer": ""
+    },
+    {
+        "id": "question-35",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Vous disposez d'un abonnement Azure. Vous devez créer deux rôles personnalisés, nommés Rôle1 et Rôle2. La solution doit répondre aux exigences suivantes : • Les utilisateurs du Rôle1 peuvent créer ou supprimer des instances d'Azure Container Apps. • Les utilisateurs du Rôle2 peuvent appliquer des règles de renforcement adaptatif du réseau. Quelles autorisations de fournisseur de ressources sont requises pour chaque rôle ? Pour répondre, sélectionnez les options appropriées dans la zone de réponse. REMARQUE : Chaque sélection correcte rapporte un point.",
+        "answers": [],
+        "correctAnswer": ""
+    },
+    {
+        "id": "question-36",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "POINT D'ACCÈS Vous disposez d'un client Microsoft 365 comptant 5 000 utilisateurs. Cent d'entre eux sont des cadres. Ces derniers disposent d'une équipe de support dédiée. Vous devez vous assurer que l'équipe de support peut réinitialiser les mots de passe et gérer les paramètres d'authentification multifacteur (MFA) uniquement pour les cadres. La solution doit utiliser le principe du moindre privilège. Quel type d'objet et quel rôle Azure Active Directory (Azure AD) devez-vous utiliser ? Pour répondre, sélectionnez les options appropriées dans la zone de réponse. REMARQUE : Chaque bonne réponse rapporte un point.",
+        "answers": [],
+        "correctAnswer": ""
+    },
+    {
+        "id": "question-37",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Vous disposez d’un locataire Azure Active Directory (Azure AD) qui contient les utilisateurs indiqués dans le tableau suivant. Vous disposez d'une unité administrative nommée Au1. Groupe1, Utilisateur2 et Utilisateur3 en sont membres. L'Utilisateur5 est affecté au rôle d'administrateur d'utilisateurs pour Au1. Pour quels utilisateurs l'Utilisateur5 peut-il réinitialiser les mots de passe ?",
+        "answers": [
+            {
+                "id": "A",
+                "text": "Utilisateurs1, Utilisateur2 et Utilisateur3."
+            },
+            {
+                "id": "B",
+                "text": "Utilisateurs1 et Utilisateur2 uniquement."
+            },
+            {
+                "id": "C",
+                "text": "Utilisateurs3 et Utilisateur4 uniquement."
+            },
+            {
+                "id": "D",
+                "text": "Utilisateurs2 et Utilisateur3 uniquement."
+            }
+        ],
+        "correctAnswer": "D"
+    },
+    {
+        "id": "question-38",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Vous disposez d’un locataire Azure Active Directory (Azure AD) qui contient les utilisateurs indiqués dans le tableau suivant. Créez un groupe d'utilisateurs dynamique et configurez la syntaxe de règle suivante : user.usageLocation -in [\"US\",\"AU\"] -and (user.department -eq \"Sales\") -and -not (user.jobTitle -eq \"Manager\") –or (user.jobTitle -eq \"SalesRep\") Quels utilisateurs seront ajoutés au groupe ?",
+        "answers": [
+            {
+                "id": "A",
+                "text": "Utilisateur 1 uniquement ;"
+            },
+            {
+                "id": "B",
+                "text": "Utilisateur 2 uniquement ;"
+            },
+            {
+                "id": "C",
+                "text": "Utilisateur 3 uniquement ;"
+            },
+            {
+                "id": "D",
+                "text": "Utilisateurs 1 et 2 uniquement ;"
+            }
+        ],
+        "correctAnswer": "D"
+    },
+    {
+        "id": "question-39",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Vous disposez d'un locataire Azure AD contenant un utilisateur nommé Utilisateur1. L'Utilisateur1 doit gérer les attributions de licences et réinitialiser les mots de passe des utilisateurs. Quel rôle devez-vous attribuer à l'Utilisateur1 ?",
+        "answers": [
+            {
+                "id": "A",
+                "text": "Administrateur du support technique ;"
+            },
+            {
+                "id": "B",
+                "text": "Administrateur de la facturation ;"
+            },
+            {
+                "id": "C",
+                "text": "Administrateur des licences ;"
+            },
+            {
+                "id": "D",
+                "text": "Administrateur des utilisateurs"
+            }
+        ],
+        "correctAnswer": "D"
+    },
+    {
+        "id": "question-40",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Vous disposez d'un locataire Microsoft Entra contenant un utilisateur nommé Utilisateur1. Un administrateur supprime Utilisateur1. Vous devez identifier les éléments suivants : • Quel est le nombre maximal de jours pendant lesquels vous pouvez restaurer le compte Utilisateur1 ? • Quel est le rôle le moins privilégié permettant de restaurer Utilisateur1 ? Pour répondre, sélectionnez les options appropriées dans la zone de réponse. REMARQUE : Chaque sélection correcte vaut un point.",
+        "answers": [],
+        "correctAnswer": ""
+    },
+    {
+        "id": "question-41",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Vous disposez d'un locataire Microsoft Entra nommé contoso.com qui contient une application d'entreprise nommée App1. Un prestataire utilise les identifiants user1@outlook.com. Vous devez vous assurer que vous pouvez lui fournir l'accès à App1. Il doit pouvoir s'authentifier avec user1@outlook.com. Que devez-vous faire ?",
+        "answers": [
+            {
+                "id": "A",
+                "text": "Exécutez l'applet de commande New-MgUser."
+            },
+            {
+                "id": "B",
+                "text": "Exécutez l'applet de commande New-MgInvitation."
+            },
+            {
+                "id": "C",
+                "text": "Configurez les paramètres de collaboration externe."
+            },
+            {
+                "id": "D",
+                "text": "Implémentez la synchronisation Microsoft Entra Connect."
+            }
+        ],
+        "correctAnswer": "B"
+    },
+    {
+        "id": "question-42",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "POINT D'ACCÈS Votre réseau local contient un domaine Active Directory qui utilise Azure AD Connect pour se synchroniser avec un locataire Azure AD. Vous devez configurer Azure AD Connect pour répondre aux exigences suivantes : • Les connexions des utilisateurs à Azure AD doivent être authentifiées par un contrôleur de domaine Active Directory. • Les utilisateurs du domaine Active Directory doivent pouvoir utiliser la réinitialisation de mot de passe en libre-service Azure AD (SSPR). Que devez-vous utiliser pour chaque exigence ? Pour répondre, sélectionnez les options appropriées dans la zone de réponse. REMARQUE : Chaque sélection correcte rapporte un point.",
+        "answers": [],
+        "correctAnswer": ""
+    },
+    {
+        "id": "question-43",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Vous avez 2 500 utilisateurs auxquels sont attribuées des licences Microsoft Office 365 Entreprise E3. Ces licences sont attribuées individuellement. À partir du panneau « Groupes » du centre d'administration Azure Active Directory, attribuez des licences Microsoft Office 365 Entreprise E5 à un groupe incluant tous les utilisateurs. Vous deviez supprimer les licences Office 365 Entreprise E3 des utilisateurs en minimisant les efforts administratifs. Que devez-vous utiliser ?",
+        "answers": [
+            {
+                "id": "A",
+                "text": "Le panneau « Groupes » du centre d'administration Azure Active Directory ;"
+            },
+            {
+                "id": "B",
+                "text": "L'applet de commande Set-AzureADGroup ;"
+            },
+            {
+                "id": "C",
+                "text": "Le panneau « Gouvernance des identités » du centre d'administration Azure Active Directory ;"
+            },
+            {
+                "id": "D",
+                "text": "L'applet de commande Set-MsolUserLicense"
+            }
+        ],
+        "correctAnswer": "D"
+    },
+    {
+        "id": "question-44",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Remarque : Cette question fait partie d’une série de questions présentant le même scénario. Chaque question de la série contient une solution unique susceptible d’atteindre les objectifs fixés. Certains ensembles de questions peuvent avoir plusieurs solutions correctes, tandis que d’autres peuvent ne pas en avoir. Après avoir répondu à une question de cette section, vous ne pourrez plus y revenir. Par conséquent, ces questions n’apparaîtront pas dans l’écran de révision. Vous disposez d’une forêt Active Directory synchronisée avec un locataire Azure AD. Vous constatez que lorsqu’un compte utilisateur est désactivé dans Active Directory, l’utilisateur désactivé peut toujours s’authentifier auprès d’Azure AD pendant 30 minutes maximum. Vous devez vous assurer que lorsqu’un compte utilisateur est désactivé dans Active Directory, il est immédiatement empêché de s’authentifier auprès d’Azure AD. Solution : Vous configurez des stratégies d’accès conditionnel. Atteint-il l’objectif ?",
+        "answers": [
+            {
+                "id": "A",
+                "text": "Oui."
+            },
+            {
+                "id": "B",
+                "text": "Non."
+            }
+        ],
+        "correctAnswer": "B"
+    },
+    {
+        "id": "question-45",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Remarque : Cette question fait partie d'une série de questions présentant le même scénario. Chaque question de la série contient une solution unique susceptible d'atteindre les objectifs fixés. Certaines séries de questions peuvent avoir plusieurs solutions correctes, tandis que d'autres peuvent ne pas en avoir. Après avoir répondu à une question de cette section, vous ne pourrez plus y revenir. Par conséquent, ces questions n'apparaîtront pas dans l'écran de révision. Vous disposez d'un abonnement Microsoft 365 E5. Vous créez un utilisateur nommé Utilisateur1. Vous devez vous assurer que cet utilisateur peut mettre à jour l'état des actions d'amélioration du score de sécurité des identités. Solution : Vous attribuez le rôle d'administrateur Exchange à Utilisateur1. Atteignez-vous l'objectif ?",
+        "answers": [
+            {
+                "id": "A",
+                "text": "Oui."
+            },
+            {
+                "id": "B",
+                "text": "Non."
+            }
+        ],
+        "correctAnswer": "A"
+    },
+    {
+        "id": "question-46",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Remarque : Cette question fait partie d’une série de questions présentant le même scénario. Chaque question de la série contient une solution unique susceptible d’atteindre les objectifs fixés. Certaines séries de questions peuvent avoir plusieurs solutions correctes, tandis que d’autres peuvent ne pas en avoir. Après avoir répondu à une question de cette section, vous ne pourrez plus y revenir. Par conséquent, ces questions n’apparaîtront pas dans l’écran de révision. Vous disposez d’un abonnement Microsoft 365 E5. Vous créez un utilisateur nommé Utilisateur1. Vous devez vous assurer que cet utilisateur peut mettre à jour l’état des actions d’amélioration du score de sécurité des identités. Solution : Vous attribuez le rôle d’administrateur utilisateur à Utilisateur1. Atteignez-vous l’objectif ?",
+        "answers": [
+            {
+                "id": "A",
+                "text": "Oui"
+            },
+            {
+                "id": "B",
+                "text": "Non"
+            }
+        ],
+        "correctAnswer": "B"
+    },
+    {
+        "id": "question-47",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "HOTSPOT Étude de cas Présentation Contoso, Ltd. est une société de conseil dont le siège social est à Montréal et qui possède des succursales à Londres et à Seattle. Contoso a conclu un partenariat avec Fabrikam, Inc., qui possède un locataire Azure Active Directory (Azure AD) nommé fabrikam.com. Environnement existant. Environnement existant Le réseau local de Contoso contient un domaine Active Directory nommé contoso.com. Ce domaine contient une unité organisationnelle (UO) nommée Contoso_Resources. Cette UO contient tous les utilisateurs et ordinateurs. Le domaine Active Directory contoso.com contient les utilisateurs concernés, indiqués dans le tableau suivant. Contoso comprend également un service marketing qui compte des utilisateurs dans chaque bureau. Environnement existant : Microsoft 365/Azure Contoso dispose d'un locataire Azure AD nommé contoso.com, associé aux licences suivantes : • Microsoft Office 365 Entreprise E5 • Enterprise Mobility + Security E5 • Windows 10 Entreprise E3 • Plan de projet 3 Azure AD Connect est configuré entre Azure AD et les services de domaine Active Directory (AD DS). Seule l'unité d'organisation Contoso_Resources est synchronisée. Les administrateurs du support technique utilisent couramment le Centre d'administration Microsoft 365 pour gérer les paramètres utilisateur. Les administrateurs d'utilisateurs utilisent actuellement le Centre d'administration Microsoft 365 pour attribuer manuellement les licences. Tous les utilisateurs disposent de licences attribuées, à l'exception des cas suivants : • Les utilisateurs du bureau de Londres n'ont pas de licence Microsoft 365 Phone System attribuée. • Les utilisateurs du bureau de Seattle n'ont pas de licence Yammer Enterprise attribuée. Les paramètres de sécurité par défaut sont désactivés pour contoso.com. Contoso utilise Azure AD Privileged Identity Management (PIM) pour protéger les rôles administratifs. Environnement existant. Problèmes Contoso identifie les problèmes suivants : • Actuellement, tous les administrateurs du support technique peuvent gérer les licences utilisateur sur l'ensemble du client Microsoft 365. • Les administrateurs utilisateurs signalent la lourdeur de la configuration manuelle des différentes exigences de licence pour chaque bureau Contoso. • Les administrateurs du support technique passent trop de temps à provisionner les accès internes et invités aux services et applications Microsoft 365 requis. • Actuellement, les administrateurs du support technique peuvent effectuer des tâches en utilisant le rôle Administrateur utilisateur sans justification ni approbation. • Lorsque le nœud Journaux est sélectionné dans Azure AD, un message d'erreur s'affiche indiquant que l'intégration de Log Analytics n'est pas activée. Exigences. Modifications prévues Contoso prévoit de mettre en œuvre les modifications suivantes : • Mettre en œuvre la réinitialisation de mot de passe en libre-service (SSPR). • Analyser les journaux d'activité d'audit Azure à l'aide d'Azure Monitor. • Simplifier l'attribution des licences pour les nouveaux utilisateurs ajoutés au locataire. • Collaborer avec les utilisateurs de Fabrikam sur une campagne marketing conjointe. • Configurer le rôle d'administrateur utilisateur pour exiger une justification et une approbation pour l'activation. • Mettre en œuvre une application web Azure métier personnalisée nommée App1. App1 sera accessible depuis Internet et authentifié via des comptes Azure AD. • Pour les nouveaux utilisateurs du service marketing, implémenter un processus d'approbation automatisé afin de leur donner accès à un site, un groupe et une application Microsoft SharePoint Online. Contoso prévoit d'acquérir la société ADatum Corporation. Cent nouveaux utilisateurs ADatum seront créés dans une unité d'organisation Active Directory nommée Adatum. Les utilisateurs seront basés à Londres et à Seattle. Exigences. Exigences techniques Contoso identifie les exigences techniques suivantes : • Tous les utilisateurs doivent être synchronisés depuis AD DS vers le locataire Azure AD contoso.com. • L'URI de redirection de l'application App1 doit pointer vers https://contoso.com/auth-response. • L'attribution de licences aux nouveaux utilisateurs doit être automatique en fonction de leur localisation. • Les utilisateurs Fabrikam doivent avoir accès au site SharePoint du service marketing pendant 90 jours maximum. • Les actions administratives effectuées dans Azure AD doivent être auditées. Les journaux d'audit doivent être conservés pendant un an. • Les administrateurs du support technique doivent pouvoir gérer les licences uniquement pour les utilisateurs de leur bureau respectif. • Les utilisateurs doivent être contraints de modifier leur mot de passe s'il existe un risque de compromission de leur identité. Vous devez respecter les exigences techniques pour la gestion des licences par les administrateurs du support technique. Que devez-vous créer en premier et quel outil utiliser ? Pour répondre, sélectionnez les options appropriées dans la zone de réponse. REMARQUE : chaque sélection correcte vaut un point.",
+        "answers": [],
+        "correctAnswer": ""
+    },
+    {
+        "id": "question-48",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Étude de cas Présentation ADatum Corporation est une société de conseil basée à Montréal. ADatum a récemment acquis Litware, Inc., une entreprise basée à Vancouver. Environnement existant. Environnement ADatum Le réseau local d'ADatum contient une forêt Active Directory Domain Services (AD DS) nommée adatum.com. ADatum dispose d'un abonnement Microsoft 365 E5. Cet abonnement contient un domaine vérifié qui se synchronise avec le domaine AD DS adatum.com via Azure AD Connect. ADatum possède un locataire Azure Active Directory (Azure AD) nommé adatum.com. Les paramètres de sécurité par défaut de ce locataire sont désactivés. Le locataire contient les utilisateurs indiqués dans le tableau suivant. Le locataire contient les groupes indiqués dans le tableau suivant. Environnement existant. Environnement Litware Litware possède une forêt AD DS nommée litware.com. Environnement existant. Énoncés des problèmes ADatum identifie les problèmes suivants : • Plusieurs utilisateurs du service commercial possèdent jusqu'à cinq appareils. Ces utilisateurs signalent qu'ils doivent parfois contacter le support pour joindre leurs appareils au locataire Azure AD, car ils ont atteint leur limite d'appareils. • Un incident de sécurité récent a révélé que plusieurs utilisateurs ont divulgué leurs identifiants, qu'un navigateur suspect a été utilisé pour se connecter et que des ressources ont été consultées depuis une adresse IP anonyme. • Lorsque vous tentez d'attribuer le rôle d'administrateur de périphérique à IT_Group1, le groupe n'apparaît PAS dans la liste de sélection. • N'importe quel membre de l'organisation peut inviter des utilisateurs invités, y compris les autres invités et les non-administrateurs. • Le service d'assistance passe trop de temps à réinitialiser les mots de passe des utilisateurs. • Actuellement, les utilisateurs n'utilisent que des mots de passe pour l'authentification. Exigences. Modifications prévues : ADatum prévoit de mettre en œuvre les modifications suivantes : • Configuration de la réinitialisation de mot de passe en libre-service (SSPR). • Configuration de l'authentification multifacteur (MFA) pour tous les utilisateurs. • Configuration d'une vérification d'accès pour un package d'accès nommé Package1. • Exiger l'approbation de l'administrateur pour l'accès des applications aux données organisationnelles. • Synchronisation des utilisateurs et groupes AD DS de litware.com avec le locataire Azure AD. • S'assurer que seuls les utilisateurs disposant de rôles d'administrateur spécifiques peuvent inviter des utilisateurs invités. • Augmentation du nombre maximal d'appareils pouvant être joints ou enregistrés dans Azure AD à 10. Exigences. Exigences techniques ADatum identifie les exigences techniques suivantes : • Les utilisateurs dotés du rôle d'administrateur utilisateur doivent pouvoir demander l'autorisation d'utiliser ce rôle en cas de besoin pendant un an maximum. • Les utilisateurs doivent être invités à s'inscrire à l'authentification multifacteur (MFA) et avoir la possibilité de contourner l'inscription pendant une période de grâce. • Les utilisateurs doivent fournir une méthode d'authentification pour réinitialiser leur mot de passe via SSPR. Les méthodes disponibles doivent inclure : - E-mail - Téléphone - Questions de sécurité - L'application Microsoft Authenticator • Aucune relation d'approbation ne doit être établie entre les domaines AD DS adatum.com et litware.com. • Le principe du moindre privilège doit être appliqué. Vous devez résoudre le problème des utilisateurs du service commercial. Que devez-vous configurer pour le locataire Azure AD ?",
+        "answers": [
+            {
+                "id": "A",
+                "text": "Paramètres de l'appareil"
+            },
+            {
+                "id": "B",
+                "text": "Paramètres utilisateur"
+            },
+            {
+                "id": "C",
+                "text": "Paramètres des révisions d'accès"
+            },
+            {
+                "id": "D",
+                "text": "Paramètres de sécurité par défaut"
+            }
+        ],
+        "correctAnswer": "A"
+    },
+    {
+        "id": "question-49",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Étude de cas Présentation ADatum Corporation est une société de conseil basée à Montréal. ADatum a récemment acquis Litware, Inc., une entreprise basée à Vancouver. Environnement existant. Environnement ADatum Le réseau local d'ADatum contient une forêt Active Directory Domain Services (AD DS) nommée adatum.com. ADatum dispose d'un abonnement Microsoft 365 E5. Cet abonnement contient un domaine vérifié qui se synchronise avec le domaine AD DS adatum.com via Azure AD Connect. ADatum possède un locataire Azure Active Directory (Azure AD) nommé adatum.com. Les paramètres de sécurité par défaut de ce locataire sont désactivés. Le locataire contient les utilisateurs indiqués dans le tableau suivant. Le locataire contient les groupes indiqués dans le tableau suivant. Environnement existant. Environnement Litware Litware possède une forêt AD DS nommée litware.com. Environnement existant. Énoncés des problèmes ADatum identifie les problèmes suivants : • Plusieurs utilisateurs du service commercial possèdent jusqu'à cinq appareils. Ces utilisateurs signalent qu'ils doivent parfois contacter le support pour joindre leurs appareils au locataire Azure AD, car ils ont atteint leur limite d'appareils. • Un incident de sécurité récent a révélé que plusieurs utilisateurs ont divulgué leurs identifiants, qu'un navigateur suspect a été utilisé pour la connexion et que des ressources ont été consultées depuis une adresse IP anonyme. • Lorsque vous tentez d'attribuer le rôle « Administrateurs d'appareils » à IT_Group1, le groupe n'apparaît PAS dans la liste de sélection. • Tous les membres de l'organisation peuvent inviter des utilisateurs invités, y compris les autres invités et les non-administrateurs. • Le support technique passe trop de temps à réinitialiser les mots de passe des utilisateurs. • Actuellement, les utilisateurs n'utilisent que des mots de passe pour l'authentification. Exigences. Modifications prévues ADatum prévoit de mettre en œuvre les modifications suivantes : • Configuration de la réinitialisation de mot de passe en libre-service (SSPR). • Configuration de l'authentification multifacteur (MFA) pour tous les utilisateurs. • Configuration d'une vérification d'accès pour un package d'accès nommé Package1. • Exiger l'approbation de l'administrateur pour l'accès des applications aux données de l'organisation. • Synchronisation des utilisateurs et groupes AD DS de litware.com avec le locataire Azure AD. • S'assurer que seuls les utilisateurs disposant de rôles d'administrateur spécifiques peuvent inviter des utilisateurs invités. • Augmentation du nombre maximal d'appareils pouvant être joints ou enregistrés dans Azure AD à 10. Exigences. Exigences techniques ADatum identifie les exigences techniques suivantes : • Les utilisateurs dotés du rôle d'administrateur doivent pouvoir demander l'autorisation d'utiliser ce rôle en cas de besoin pendant un an maximum. • Les utilisateurs doivent être invités à s'inscrire à l'authentification multifacteur (MFA) et avoir la possibilité de contourner l'inscription pendant une période de grâce. • Les utilisateurs doivent fournir une méthode d'authentification pour réinitialiser leur mot de passe via SSPR. Les méthodes disponibles doivent inclure : - E-mail - Téléphone - Questions de sécurité - L'application Microsoft Authenticator • Aucune relation de confiance ne doit être établie entre les domaines AD DS adatum.com et litware.com. • Le principe du moindre privilège doit être appliqué. Vous devez résoudre le problème du groupe IT_Group1. Que devez-vous faire en premier ?",
+        "answers": [
+            {
+                "id": "A",
+                "text": "Modifiez le type d'adhésion du groupe IT_Group1 en Utilisateur dynamique."
+            },
+            {
+                "id": "B",
+                "text": "Recréez le groupe IT_Group1."
+            },
+            {
+                "id": "C",
+                "text": "Modifiez le type d'adhésion du groupe IT_Group1 en Appareil dynamique."
+            },
+            {
+                "id": "D",
+                "text": "Ajoutez un propriétaire au groupe IT_Group1."
+            }
+        ],
+        "correctAnswer": "B"
+    },
+    {
+        "id": "question-50",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Case StudyOverviewADatum Corporation is a consulting company in Montreal.ADatum recently acquired a Vancouver-based company named Litware, Inc.Existing Environment. ADatum EnvironmentThe on-premises network of ADatum contains an Active Directory Domain Services (AD DS) forest named adatum.com.ADatum has a Microsoft 365 E5 subscription. The subscription contains a verified domain that syncs with the adatum.com AD DS domain by using Azure AD Connect.ADatum has an Azure Active Directory (Azure AD) tenant named adatum.com. The tenant has Security defaults disabled.The tenant contains the users shown in the following table. Le locataire contient les groupes indiqués dans le tableau suivant. Environnement existant. Environnement Litware Litware possède une forêt AD DS nommée litware.com Environnement existant. Énoncés des problèmes ADatum identifie les problèmes suivants : • Plusieurs utilisateurs du service commercial possèdent jusqu'à cinq appareils. Ces utilisateurs signalent qu'ils doivent parfois contacter le support pour joindre leurs appareils au locataire Azure AD, car ils ont atteint leur limite d'appareils. • Un incident de sécurité récent a révélé que plusieurs utilisateurs ont divulgué leurs identifiants, qu'un navigateur suspect a été utilisé pour la connexion et que des ressources ont été consultées depuis une adresse IP anonyme. • Lorsque vous tentez d'attribuer le rôle Administrateurs d'appareils à IT_Group1, le groupe n'apparaît PAS dans la liste de sélection. • Tous les membres de l'organisation peuvent inviter des utilisateurs invités, y compris les autres invités et les non-administrateurs. • Le support technique passe trop de temps à réinitialiser les mots de passe des utilisateurs. • Actuellement, les utilisateurs n'utilisent que des mots de passe pour l'authentification. Exigences. Modifications prévues ADatum prévoit de mettre en œuvre les modifications suivantes : • Configuration de la réinitialisation de mot de passe en libre-service (SSPR). • Configuration de l'authentification multifacteur (MFA) pour tous les utilisateurs. • Configuration d'une vérification d'accès pour un package d'accès nommé Package1. • Exiger l'approbation de l'administrateur pour l'accès des applications aux données de l'organisation. • Synchronisation des utilisateurs et groupes AD DS de litware.com avec le locataire Azure AD. • S'assurer que seuls les utilisateurs disposant de rôles d'administrateur spécifiques peuvent inviter des utilisateurs invités. • Augmentation du nombre maximal d'appareils pouvant être joints ou enregistrés dans Azure AD à 10. Exigences. Exigences techniques ADatum identifie les exigences techniques suivantes : • Les utilisateurs dotés du rôle d'administrateur utilisateur doivent pouvoir demander l'autorisation d'utiliser ce rôle en cas de besoin pendant un an maximum. • Les utilisateurs doivent être invités à s'inscrire à l'authentification multifacteur (MFA) et avoir la possibilité de contourner l'inscription pendant une période de grâce. • Les utilisateurs doivent fournir une méthode d'authentification pour réinitialiser leur mot de passe via SSPR. Les méthodes disponibles doivent inclure : - E-mail - Téléphone - Questions de sécurité - L'application Microsoft Authenticator • Aucune relation de confiance ne doit être établie entre les domaines AD DS adatum.com et litware.com. • Le principe du moindre privilège doit être appliqué. Vous devez implémenter les modifications prévues pour litware.com. Que devez-vous configurer ?",
+        "answers": [
+            {
+                "id": "A",
+                "text": "Synchronisation cloud Azure AD Connect entre le locataire Azure AD et litware.com."
+            },
+            {
+                "id": "B",
+                "text": "Azure AD Connect pour inclure le domaine litware.com."
+            },
+            {
+                "id": "C",
+                "text": "Mode de préproduction dans Azure AD Connect pour le domaine litware.com."
+            }
+        ],
+        "correctAnswer": "A"
+    },
+    {
+        "id": "question-51",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Vous disposez des ressources Azure indiquées dans le tableau suivant. À quelles identités pouvez-vous attribuer le rôle Contributeur pour RG1 ?",
+        "answers": [
+            {
+                "id": "A",
+                "text": "Utilisateur 1 uniquement ;"
+            },
+            {
+                "id": "B",
+                "text": "Utilisateur 1 et Groupe 1 uniquement ;"
+            },
+            {
+                "id": "C",
+                "text": "Utilisateur 1 et VM 1 uniquement ;"
+            },
+            {
+                "id": "D",
+                "text": "Utilisateur 1, VM 1 et App 1 uniquement ;"
+            }
+        ],
+        "correctAnswer": "E"
+    },
+    {
+        "id": "question-52",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Vous disposez d'un locataire Azure AD contenant un utilisateur nommé Utilisateur1. Le rôle Administrateur d'utilisateurs lui est attribué. Vous devez configurer les paramètres de collaboration externe du locataire afin de répondre aux exigences suivantes : • Les utilisateurs invités ne doivent pas être autorisés à consulter les adresses e-mail du personnel. • Les utilisateurs invités ne doivent pouvoir accéder au locataire que s'ils sont invités par Utilisateur1. Quels sont les trois paramètres à configurer ? Pour répondre, sélectionnez les paramètres appropriés dans la zone de réponse. REMARQUE : Chaque sélection correcte rapporte un point.",
+        "answers": [],
+        "correctAnswer": ""
+    },
+    {
+        "id": "question-53",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Vous avez 2 500 utilisateurs auxquels sont attribuées des licences Microsoft Office 365 Entreprise E3. Ces licences sont attribuées individuellement. À partir du panneau « Groupes » du centre d'administration Azure Active Directory, attribuez des licences Microsoft Office 365 Entreprise E5 à un groupe incluant tous les utilisateurs. Vous deviez supprimer les licences Office 365 Entreprise E3 des utilisateurs en minimisant les efforts administratifs. Que devez-vous utiliser ?",
+        "answers": [
+            {
+                "id": "A",
+                "text": "Le panneau « Groupes » du centre d'administration Azure Active Directory ;"
+            },
+            {
+                "id": "B",
+                "text": "L'applet de commande Set-AzureAdUser ;"
+            },
+            {
+                "id": "C",
+                "text": "Le panneau « Gouvernance des identités » du centre d'administration Azure Active Directory ;"
+            },
+            {
+                "id": "D",
+                "text": "Le panneau « Licences » du centre d'administration Azure Active Directory"
+            }
+        ],
+        "correctAnswer": "D"
+    },
+    {
+        "id": "question-54",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Remarque : Cette question fait partie d’une série de questions présentant le même scénario. Chaque question de la série contient une solution unique susceptible d’atteindre les objectifs fixés. Certaines séries de questions peuvent avoir plusieurs solutions correctes, tandis que d’autres peuvent ne pas en avoir. Après avoir répondu à une question de cette section, vous ne pourrez plus y revenir. Par conséquent, ces questions n’apparaîtront pas dans l’écran de révision. Vous disposez d’un abonnement Microsoft 365 E5. Vous créez un utilisateur nommé Utilisateur1. Vous devez vous assurer que cet utilisateur peut mettre à jour l’état des actions d’amélioration du score de sécurité des identités. Solution : Vous attribuez le rôle d’opérateur de sécurité à Utilisateur1. Atteint-il l’objectif ?",
+        "answers": [
+            {
+                "id": "A",
+                "text": "Oui"
+            },
+            {
+                "id": "B",
+                "text": "Non"
+            }
+        ],
+        "correctAnswer": "B"
+    },
+    {
+        "id": "question-55",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Remarque : Cette question fait partie d'une série de questions présentant le même scénario. Chaque question de la série contient une solution unique susceptible d'atteindre les objectifs fixés. Certains ensembles de questions peuvent avoir plusieurs solutions correctes, tandis que d'autres peuvent ne pas en avoir. Après avoir répondu à une question de cette section, vous ne pourrez plus y revenir. Par conséquent, ces questions n'apparaîtront pas dans l'écran de révision. Vous disposez d'un abonnement Microsoft 365 E5. Vous créez un utilisateur nommé Utilisateur1. Vous devez vous assurer que cet utilisateur peut mettre à jour l'état des actions d'amélioration du score de sécurité des identités. Solution : Vous attribuez le rôle d'administrateur SharePoint à Utilisateur1. Atteint-il l'objectif ?",
+        "answers": [
+            {
+                "id": "A",
+                "text": "Oui"
+            },
+            {
+                "id": "B",
+                "text": "Non"
+            }
+        ],
+        "correctAnswer": "A"
+    },
+    {
+        "id": "question-56",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Vous disposez d'un locataire Azure AD contenant un utilisateur nommé Admin1. Vous devez vous assurer que Admin1 peut uniquement effectuer les tâches suivantes : • Depuis le Centre d'administration Microsoft 365, créer et gérer les demandes de service. • Depuis le Centre d'administration Microsoft 365, consulter et configurer l'état du service. • Depuis le portail Azure, créer et gérer les tickets de support. La solution doit minimiser les efforts administratifs. Que devez-vous faire ?",
+        "answers": [
+            {
+                "id": "A",
+                "text": "Créer une unité administrative et ajouter Admin1."
+            },
+            {
+                "id": "B",
+                "text": "Activer Azure AD Privileged Identity Management (PIM) pour Admin1."
+            },
+            {
+                "id": "C",
+                "text": "Attribuer à Admin1 le rôle d'administrateur du support technique."
+            },
+            {
+                "id": "D",
+                "text": "Créer un rôle personnalisé et l'attribuer à Admin1."
+            }
+        ],
+        "correctAnswer": "D"
+    },
+    {
+        "id": "question-57",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Votre réseau contient un domaine Active Directory Domain Services (AD DS) local synchronisé avec un locataire Azure AD. Vous devez vous assurer que l'authentification des utilisateurs est toujours effectuée en validant les mots de passe par rapport au domaine AD DS. Que configurer et que faut-il utiliser ? Pour répondre, sélectionnez les options appropriées dans la zone de réponse. REMARQUE : Chaque sélection correcte rapporte un point.",
+        "answers": [],
+        "correctAnswer": ""
+    },
+    {
+        "id": "question-58",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Vous disposez d'un client Microsoft 365 utilisant le domaine fabrikam.com. Les paramètres d'invitation d'invités pour Azure Active Directory (Azure AD) sont configurés comme indiqué dans l'illustration. (Cliquez sur l'onglet Illustrer.) Un utilisateur nommé bsmith@fabrikam.com partage une bibliothèque de documents Microsoft SharePoint Online avec les utilisateurs indiqués dans le tableau suivant. Quels utilisateurs recevront un code d'accès par e-mail ? Utilisateur 2 uniquement. Utilisateur 1 uniquement. Utilisateurs 1 et 2 uniquement. Utilisateurs 1, 2 et 3 uniquement.",
+        "answers": [],
+        "correctAnswer": "A"
+    },
+    {
+        "id": "question-59",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Vous disposez de deux locataires Microsoft Entra nommés contoso.com et fabrikam.com. Contoso.com contient les identités présentées dans le tableau suivant. Vous configurez la synchronisation inter-locataires de contoso.com vers fabrikam.com. Quelles identités seront synchronisées avec fabrikam.com ?",
+        "answers": [
+            {
+                "id": "A",
+                "text": "Utilisateur 1 uniquement ;"
+            },
+            {
+                "id": "B",
+                "text": "Utilisateur 1 et Groupe 1 uniquement ;"
+            },
+            {
+                "id": "C",
+                "text": "Utilisateur 1 et Groupe 2 uniquement ;"
+            },
+            {
+                "id": "D",
+                "text": "Utilisateur 1, Groupe 1 et Groupe 2"
+            }
+        ],
+        "correctAnswer": "A"
+    },
+    {
+        "id": "question-60",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Votre réseau contient un domaine Active Directory Domain Services (AD DS) local qui se synchronise avec Azure AD et contient les utilisateurs indiqués dans le tableau suivant. Dans Azure AD Connect, le filtrage de domaine/UO est configuré comme indiqué dans l’illustration suivante. Azure AD Connect est configuré comme indiqué dans l’illustration suivante. Pour chacune des affirmations suivantes, sélectionnez « Oui » si elle est vraie. Sinon, sélectionnez « Non ». REMARQUE : Chaque réponse correcte rapporte un point.",
+        "answers": [],
+        "correctAnswer": ""
+    },
+    {
+        "id": "question-61",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Vous avez 2 500 utilisateurs qui ont des licences Microsoft Office 365 Enterprise E3 attribuées. Les licences sont attribuées à des utilisateurs individuels.Depuis le panneau Groupes dans le centre d'administration Azure Active Directory, vous attribuez des licences Microsoft Office 365 Enterprise E5 à un groupe qui inclut tous les utilisateurs.Vous devez retirer les licences Office 365 Enterprise E3 des utilisateurs en utilisant le moins d'efforts administratifs possible.Que devez-vous utiliser ?",
+        "answers": [
+            {
+                "id": "A",
+                "text": "la cmdlet Update-MgGroup"
+            },
+            {
+                "id": "B",
+                "text": "le panneau Licences dans le centre d'administration Azure Active Directory"
+            },
+            {
+                "id": "C",
+                "text": "la cmdlet Set-WindowsProductKey"
+            },
+            {
+                "id": "D",
+                "text": "le panneau des unités administratives dans le centre d'administration Azure Active Directory"
+            }
+        ],
+        "correctAnswer": "B"
+    },
+    {
+        "id": "question-62",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Vous avez un locataire Azure AD qui contient les utilisateurs montrés dans le tableau suivant. Vous devez comparer les autorisations des rôles de chaque utilisateur. La solution doit minimiser l'effort administratif.Que devriez-vous utiliser ?",
+        "answers": [
+            {
+                "id": "A",
+                "text": "le portail Microsoft 365 Defender"
+            },
+            {
+                "id": "B",
+                "text": "le centre d'administration Microsoft 365"
+            },
+            {
+                "id": "C",
+                "text": "le centre d'administration Microsoft Entra"
+            },
+            {
+                "id": "D",
+                "text": "le portail de conformité Microsoft Purview"
+            }
+        ],
+        "correctAnswer": "B"
+    },
+    {
+        "id": "question-63",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Vous avez une organisation Microsoft Exchange qui utilise un espace d'adresses SMTP de contoso.com.Plusieurs utilisateurs utilisent leur adresse e-mail contoso.com pour s'inscrire en libre-service à Azure AD.Vous obtenez des privilèges d'administrateur global pour le locataire Azure AD qui contient les utilisateurs auto-signés.Vous devez empêcher les utilisateurs de créer des comptes utilisateurs dans le locataire Azure AD contoso.com pour l'inscription en libre-service aux services Microsoft 365.Quel cmdlet PowerShell devez-vous exécuter ?",
+        "answers": [
+            {
+                "id": "A",
+                "text": "Update-MgOrganization"
+            },
+            {
+                "id": "B",
+                "text": "Update-MgPolicyPermissionGrantPolicyExclude"
+            },
+            {
+                "id": "C",
+                "text": "Update-MgDomain"
+            },
+            {
+                "id": "D",
+                "text": "Update-MgDomainFederationConfiguration"
+            }
+        ],
+        "correctAnswer": "A"
+    },
+    {
+        "id": "question-64",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Vous avez un locataire Azure AD qui contient l'utilisateur externe montré dans l'exposition suivante. Vous mettez à jour l'adresse e-mail de l'utilisateur. Vous devez vous assurer que l'utilisateur peut s'authentifier en utilisant l'adresse e-mail mise à jour. Que devez-vous faire pour l'utilisateur ?",
+        "answers": [
+            {
+                "id": "A",
+                "text": "Modifier les paramètres des méthodes d'authentification."
+            },
+            {
+                "id": "B",
+                "text": "Réinitialiser le mot de passe."
+            },
+            {
+                "id": "C",
+                "text": "Révoquer les sessions actives."
+            },
+            {
+                "id": "D",
+                "text": "Réinitialiser le statut de rachat."
+            }
+        ],
+        "correctAnswer": "D"
+    },
+    {
+        "id": "question-65",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Vous avez un locataire Azure AD. Vous devez vous assurer que seuls les utilisateurs provenant de domaines externes spécifiques peuvent être invités en tant qu'invités dans le locataire. Quels paramètres devez-vous configurer ?",
+        "answers": [
+            {
+                "id": "A",
+                "text": "Paramètres de collaboration externe"
+            },
+            {
+                "id": "B",
+                "text": "Tous les fournisseurs d'identité"
+            },
+            {
+                "id": "C",
+                "text": "Paramètres d'accès inter-locataires"
+            },
+            {
+                "id": "D",
+                "text": "Abonnements liés"
+            }
+        ],
+        "correctAnswer": "A"
+    },
+    {
+        "id": "question-66",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Vous avez un locataire Azure AD qui contient un utilisateur nommé User1 et un groupe Microsoft 365 nommé Group1. User1 est le propriétaire de Group1.Vous devez vous assurer que User1 est notifié tous les trois mois pour valider l'appartenance des invités à Group1.Que devez-vous faire ?",
+        "answers": [
+            {
+                "id": "A",
+                "text": "Configurer les paramètres de collaboration externe."
+            },
+            {
+                "id": "B",
+                "text": "Créer un examen d'accès."
+            },
+            {
+                "id": "C",
+                "text": "Configurer un package d'accès."
+            },
+            {
+                "id": "D",
+                "text": "Créer une politique d'expiration de groupe."
+            }
+        ],
+        "correctAnswer": "B"
+    },
+    {
+        "id": "question-67",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Vous avez un locataire Microsoft Entra qui contient un groupe nommé Group3 et une unité administrative nommée Department1.Department1 a les utilisateurs montrés dans l'exposition des utilisateurs. (Cliquez sur l'onglet Utilisateurs.) Le Département1 a les groupes présentés dans l'exposition des Groupes. (Cliquez sur l'onglet Groupes.) Les attributions de rôle d'administrateur utilisateur sont affichées dans l'annexe des attributions (Cliquez sur l'onglet Attributions.) Les membres du Groupe2 sont montrés dans l'exposition du Groupe2. (Cliquez sur l'onglet Groupe2.) Pour chacune des affirmations suivantes, sélectionnez Oui si l'affirmation est vraie. Sinon, sélectionnez Non.REMARQUE : Chaque sélection correcte vaut un point.",
+        "answers": [],
+        "correctAnswer": ""
+    },
+    {
+        "id": "question-68",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Votre réseau contient un domaine de services d'annuaire Active Directory (AD DS) sur site nommé fabrikam.com. Le domaine contient une instance de services de fédération Active Directory (AD FS) et un serveur membre nommé Server1 qui exécute Windows Server. Le domaine contient les utilisateurs montrés dans le tabeau suivant Vous avez un locataire Microsoft Entra nommé contoso.com qui est lié à un abonnement Microsoft 365. Vous établissez une fédération entre fabrikam.com et contoso.com en utilisant une instance Microsoft Entra Connect qui est configurée comme indiqué dans l'exposition suivante. Vous effectuez les tâches suivantes dans contoso.com : • Créer un groupe nommé Group1. • Désactiver User2. • Activer User3. Pour chacune des affirmations suivantes, sélectionnez Oui si l'affirmation est vraie. Sinon, sélectionnez Non. REMARQUE : Chaque bonne sélection vaut un point.",
+        "answers": [],
+        "correctAnswer": ""
+    },
+    {
+        "id": "question-69",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Vous avez un locataire Microsoft Entra qui possède un plan de service Microsoft Entra ID P2. Le locataire contient les utilisateurs indiqués dans le tableau suivant. Vous avez les paramètres du dispositif affichés dans l'exposition suivante. L'utilisateur 1 possède les appareils présentés dans le tableau suivant.",
+        "answers": [],
+        "correctAnswer": ""
+    },
+    {
+        "id": "question-70",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Vous avez un abonnement Azure nommé Sub1 qui contient un utilisateur nommé User1.Vous devez vous assurer que User1 peut acheter une licence pour la gestion des autorisations Microsoft Entra pour Sub1. La solution doit suivre le principe du moindre privilège.Quel rôle devez-vous attribuer à User1 ?A. Administrateur global B. Administrateur de facturation C. Administrateur de gestion des autorisations D. Administrateur des accès des utilisateurs",
+        "answers": [],
+        "correctAnswer": "B"
+    },
+    {
+        "id": "question-71",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Vous avez un abonnement Azure qui contient un utilisateur nommé User1 et deux groupes de ressources nommés RG1 et RG2.Vous devez vous assurer que User1 peut effectuer les tâches suivantes : • Voir toutes les ressources. • Redémarrer les machines virtuelles. • Créer des machines virtuelles uniquement dans RG1. • Créer des comptes de stockage uniquement dans RG1. Quel est le nombre minimum d'attributions de rôle basées sur le contrôle d'accès (RBAC) requis ?",
+        "answers": [
+            {
+                "id": "A",
+                "text": "1"
+            },
+            {
+                "id": "B",
+                "text": "2"
+            },
+            {
+                "id": "C",
+                "text": "3"
+            },
+            {
+                "id": "D",
+                "text": "4"
+            }
+        ],
+        "correctAnswer": "C"
+    },
+    {
+        "id": "question-72",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Vous travaillez pour une entreprise nommée Contoso, Ltd. qui possède un locataire Microsoft Entra nommé contoso.com.Contoso travaille sur un projet avec les deux entreprises partenaires suivantes :• Une entreprise nommée A. Datum Corporation qui possède un locataire Microsoft Entra nommé adatum.com. • Une entreprise nommée Fabrikam, Inc. qui possède un locataire Microsoft Entra nommé fabrikam.com. Lorsque vous essayez d'inviter un nouvel utilisateur invité d'adatum.com à contoso.com, vous recevez un message d'erreur. Vous pouvez inviter avec succès un nouvel utilisateur invité de fabrikam.com à contoso.com. Vous devez être en mesure d'inviter de nouveaux utilisateurs invités d'adatum.com à contoso.com. Que devez-vous configurer ?",
+        "answers": [
+            {
+                "id": "A",
+                "text": "Paramètres d'invitation des invités"
+            },
+            {
+                "id": "B",
+                "text": "Identifiants vérifiables"
+            },
+            {
+                "id": "C",
+                "text": "Emplacements nommés"
+            },
+            {
+                "id": "D",
+                "text": "Restrictions de collaboration"
+            }
+        ],
+        "correctAnswer": "D"
+    },
+    {
+        "id": "question-73",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Vous avez un abonnement Azure qui contient une identité gérée assignée à un utilisateur nommé Managed1 dans la région Est des États-Unis d'Azure. L'abonnement contient les ressources présentées dans le tableau suivant. Quelles ressources peuvent utiliser Managed1 comme leur identité ?",
+        "answers": [
+            {
+                "id": "A",
+                "text": "WebApp1 seulement"
+            },
+            {
+                "id": "B",
+                "text": "storage1 et WebApp1 seulement"
+            },
+            {
+                "id": "C",
+                "text": "VM1 et WebApp1 seulement"
+            },
+            {
+                "id": "D",
+                "text": "VM1, storage1 et WebApp1"
+            }
+        ],
+        "correctAnswer": "D"
+    },
+    {
+        "id": "question-74",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Votre réseau contient un domaine Active Directory sur site nommé contoso.com qui se synchronise avec Microsoft Entra ID en utilisant Microsoft Entra Connect. Le domaine contient les utilisateurs montrés dans le tableau suivant. À partir d'Active Directory Utilisateurs et Ordinateurs, vous ajoutez l'utilisateur suivant : • Nom : User3 • UPN : user3@contoso.com • Adresses proxy : smtp: user3@contoso.com, smtp: sales@contoso.com À partir d'Active Directory Utilisateurs et Ordinateurs, vous mettez à jour l'attribut proxyAddresses pour chaque utilisateur comme montré dans le tableau suivant. Vous déclenchez une synchronisation manuelle.Quel statut de synchronisation Microsoft Entra Connect renverra-t-il pour chaque utilisateur ? Pour répondre, faites glisser le statut approprié vers les utilisateurs corrects. Chaque statut peut être utilisé une fois, plusieurs fois ou pas du tout. Vous devrez peut-être faire glisser la barre de séparation entre les volets ou faire défiler pour voir le contenu. REMARQUE : Chaque sélection correcte vaut un point.",
+        "answers": [],
+        "correctAnswer": ""
+    },
+    {
+        "id": "question-75",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Vous avez un locataire Microsoft 365 qui utilise le nom de domaine fabrikam.com.Les paramètres de collaboration externe sont configurés comme indiqué dans l'exposition sur la collaboration. (Cliquez sur l'onglet Collaboration.) Le code de passe à usage unique par email pour la configuration des invités est activé pour le locataire.Un utilisateur nommé bsmith@fabrikam.com partage une bibliothèque de documents Microsoft SharePoint Online avec les utilisateurs indiqués dans le tableau suivant. Quels utilisateurs recevront un code d'accès par e-mail ?",
+        "answers": [
+            {
+                "id": "A",
+                "text": "Utilisateur1 seulement"
+            },
+            {
+                "id": "B",
+                "text": "Utilisateur2 seulement"
+            },
+            {
+                "id": "C",
+                "text": "Utilisateur1 et Utilisateur2 seulement"
+            },
+            {
+                "id": "D",
+                "text": "Utilisateur1, Utilisateur2 et Utilisateur3"
+            }
+        ],
+        "correctAnswer": "B"
+    },
+    {
+        "id": "question-76",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Vous avez un abonnement Azure nommé Sub1 qui contient une machine virtuelle nommée VM1.Vous devez activer la connexion Microsoft Entra pour VM1 et configurer VM1 afin d'accéder aux ressources dans Sub1.Quel type d'identité devez-vous attribuer à VM1 ?",
+        "answers": [
+            {
+                "id": "A",
+                "text": "Compte utilisateur Microsoft Entra"
+            },
+            {
+                "id": "B",
+                "text": "Identité gérée assignée par l'utilisateur"
+            },
+            {
+                "id": "C",
+                "text": "Compte d'automatisation Azure"
+            },
+            {
+                "id": "D",
+                "text": "Identité gérée assignée par le système"
+            }
+        ],
+        "correctAnswer": "D"
+    },
+    {
+        "id": "question-77",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Vous avez 2 500 utilisateurs qui se voient attribuer des licences Microsoft Office 365 Enterprise E3. Les licences sont attribuées à des utilisateurs individuels.À partir de la section Groupes dans le centre d'administration Microsoft Entra, vous attribuez des licences Microsoft Office 365 Enterprise E5 à un groupe qui comprend tous les utilisateurs.Vous devez retirer les licences Office 365 Enterprise E3 des utilisateurs en utilisant le minimum d'efforts administratifs.Que devez-vous utiliser ?",
+        "answers": [
+            {
+                "id": "A",
+                "text": "la cmdlet Set-WindowsProductKey"
+            },
+            {
+                "id": "B",
+                "text": "la cmdlet Update-MgGroup"
+            },
+            {
+                "id": "C",
+                "text": "la cmdlet Set-MgUserLicense"
+            },
+            {
+                "id": "D",
+                "text": "la cmdlet Update-MgUser"
+            }
+        ],
+        "correctAnswer": "C"
+    },
+    {
+        "id": "question-78",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Vous avez 2 500 utilisateurs qui se voient attribuer des licences Microsoft Office 365 Enterprise E3. Les licences sont attribuées à des utilisateurs individuels.Depuis le panneau Groupes dans le centre d'administration Microsoft Entra, vous attribuez des licences Microsoft Office 365 Enterprise E5 à un groupe qui comprend tous les utilisateurs.Vous devez retirer les licenc$es Office 365 Enterprise E3 des utilisateurs en utilisant le moins d'efforts administratifs possible.Que devez-vous utiliser ?",
+        "answers": [
+            {
+                "id": "A",
+                "text": "le panneau Licences dans le centre d'administration Microsoft Entra"
+            },
+            {
+                "id": "B",
+                "text": "le panneau Unités administratives dans le centre d'administration Microsoft Entra"
+            },
+            {
+                "id": "C",
+                "text": "le panneau Gouvernance d'identité dans le centre d'administration Microsoft Entra"
+            },
+            {
+                "id": "D",
+                "text": "la cmdlet Update-MgUser"
+            }
+        ],
+        "correctAnswer": "A"
+    },
+    {
+        "id": "question-79",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Vous avez 2 500 utilisateurs qui se voient attribuer des licences Microsoft Office 365 Enterprise E3. Les licences sont attribuées à des utilisateurs individuels.Dans le volet Groupes du centre d'administration Microsoft Entra, vous attribuez des licences Microsoft Office 365 Enterprise E5 à un groupe qui inclut tous les utilisateurs.Vous devez retirer les licences Office 365 Enterprise E3 des utilisateurs en utilisant le moins d'effort administratif possible.Que devez-vous utiliser ?",
+        "answers": [
+            {
+                "id": "A",
+                "text": "le volet Gouvernance d'identité dans le centre d'administration Microsoft Entra"
+            },
+            {
+                "id": "B",
+                "text": "la cmdlet Update-MgGroup"
+            },
+            {
+                "id": "C",
+                "text": "la cmdlet Set-MgUserLicense"
+            },
+            {
+                "id": "D",
+                "text": "le volet Unités administratives dans le centre d'administration Microsoft Entra"
+            }
+        ],
+        "correctAnswer": "C"
+    },
+    {
+        "id": "question-80",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Utilisez les identifiants de connexion suivants selon vos besoins :Pour entrer votre nom d'utilisateur, placez le curseur dans la zone de connexion et cliquez sur le nom d'utilisateur ci-dessous. Pour entrer votre mot de passe, placez le curseur dans la zone Saisir le mot de passe et cliquez sur le mot de passe ci-dessous. Nom d'utilisateur Microsoft 365 : admin@XXYyz112233.onmicrosoft.com Mot de passe Microsoft 365 : =1122334455667788 Si le portail Microsoft 365 ne se charge pas correctement dans le navigateur, appuyez sur CTRL-K pour recharger le portail dans un nouvel onglet de navigateur. Les informations suivantes sont uniquement destinées à des fins de support technique : Instance de laboratoire : 99999999 Vous devez vous assurer que le propriétaire de chaque groupe Microsoft 365 est informé de renouveler son groupe tous les 180 jours. Les groupes qui NE sont PAS renouvelés doivent être supprimés. Pour les groupes sans propriétaire, les notifications doivent être envoyées à Allan Deyoung. Pour compléter cette tâche, connectez-vous au centre d'administration approprié.",
+        "answers": [],
+        "correctAnswer": ""
+    },
+    {
+        "id": "question-81",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Utilisez les identifiants de connexion suivants si nécessaire : Pour entrer votre nom d'utilisateur, placez votre curseur dans la case de connexion et cliquez sur le nom d'utilisateur ci-dessous. Pour entrer votre mot de passe, placez votre curseur dans la case Entrer le mot de passe et cliquez sur le mot de passe ci-dessous. Nom d'utilisateur Microsoft 365 : admin@XXYyz112233.onmicrosoft.comMot de passe Microsoft 365 : =1122334455667788Si le portail Microsoft 365 ne se charge pas correctement dans le navigateur, appuyez sur CTRL-K pour recharger le portail dans un nouvel onglet de navigateur. Les informations suivantes sont à des fins de support technique seulement : Instance de laboratoire : 99999999 Vous devez empêcher tous les utilisateurs d'utiliser des mots de passe qui sont des variations du mot Falcon. Pour réaliser cette tâche, connectez-vous au centre d'administration approprié. Répondez :",
+        "answers": [],
+        "correctAnswer": ""
+    },
+    {
+        "id": "question-82",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Utilisez les identifiants de connexion suivants si nécessaire : Pour entrer votre nom d'utilisateur, placez votre curseur dans la zone de connexion et cliquez sur le nom d'utilisateur ci-dessous. Pour entrer votre mot de passe, placez votre curseur dans la zone de saisie du mot de passe et cliquez sur le mot de passe ci-dessous. Nom d'utilisateur Microsoft 365 : admin@XXYyz112233.onmicrosoft.comMot de passe Microsoft 365 : =1122334455667788 Si le portail Microsoft 365 ne se charge pas correctement dans le navigateur, appuyez sur CTRL-K pour recharger le portail dans un nouvel onglet de navigateur. Les informations suivantes sont réservées à l'assistance technique uniquement : Instance de laboratoire : 99999999 Vous devez attribuer une licence Windows 10/11 Enterprise E3 au groupe sg-Retail. Pour effectuer cette tâche, connectez-vous au centre d'administration approprié.",
+        "answers": [],
+        "correctAnswer": ""
+    },
+    {
+        "id": "question-83",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Utilisez les identifiants de connexion suivants si nécessaire : Pour entrer votre nom d'utilisateur, placez votre curseur dans la case Connexion et cliquez sur le nom d'utilisateur ci-dessous. Pour entrer votre mot de passe, placez votre curseur dans la case Entrer le mot de passe et cliquez sur le mot de passe ci-dessous. Nom d'utilisateur Microsoft 365 : admin@XXYyz112233.onmicrosoft.comMot de passe Microsoft 365 : =1122334455667788 Si le portail Microsoft 365 ne se charge pas correctement dans le navigateur, appuyez sur CTRL-K pour recharger le portail dans un nouvel onglet du navigateur. Les informations suivantes sont uniquement à des fins de support technique : Instance de laboratoire : 99999999 Vous devez créer un groupe nommé Audit. La solution doit garantir que les membres d'Audit peuvent activer le rôle de Lecteur de Sécurité. Pour compléter cette tâche, connectez-vous au centre d'administration approprié.",
+        "answers": [],
+        "correctAnswer": ""
+    },
+    {
+        "id": "question-84",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Vous avez un locataire Microsoft Entra nommé contoso.com qui contient une unité administrative nommée AU1 et deux utilisateurs nommés Utilisateur1 et Utilisateur2. L'utilisateur1 est membre de AU1. Vous devez effectuer les affectations de rôles suivantes : • Utilisateur1 : Administrateur de la sécurité • Utilisateur2 : Administrateur des utilisateurs Pour quels périmètres chaque utilisateur peut-il se voir attribuer le rôle ? Pour répondre, sélectionnez les options appropriées dans la zone de réponse. REMARQUE : Chaque sélection correcte vaut un point.",
+        "answers": [],
+        "correctAnswer": ""
+    },
+    {
+        "id": "question-85",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Vous avez 2 500 utilisateurs qui ont des licences Microsoft Office 365 Enterprise E3. Les licences sont attribuées à des utilisateurs individuels. À partir de la section Groupes dans le centre d'administration Microsoft Entra, vous attribuez des licences Microsoft Office 365 Enterprise E5 à un groupe qui comprend tous les utilisateurs. Vous devez retirer les licences Office 365 Enterprise E3 des utilisateurs en utilisant le minimum d'efforts administratifs. Que devez-vous utiliser ?",
+        "answers": [
+            {
+                "id": "A",
+                "text": "la cmdlet Set-MgUserLicense"
+            },
+            {
+                "id": "B",
+                "text": "la section Gouvernance d'identité dans le centre d'administration Microsoft Entra"
+            },
+            {
+                "id": "C",
+                "text": "la section Groupes dans le centre d'administration Microsoft Entra"
+            },
+            {
+                "id": "D",
+                "text": "la cmdlet Update-MgGroup"
+            }
+        ],
+        "correctAnswer": "A"
+    },
+    {
+        "id": "question-86",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Vous avez 2 500 utilisateurs qui ont des licences Microsoft Office 365 Enterprise E3. Les licences sont attribuées à des utilisateurs individuels. À partir de la section Groupes dans le centre d'administration Microsoft Entra, vous attribuez des licences Microsoft Office 365 Enterprise E5 à un groupe qui comprend tous les utilisateurs. Vous devez retirer les licences Office 365 Enterprise E3 des utilisateurs en utilisant le minimum d'efforts administratifs. Que devez-vous utiliser ?",
+        "answers": [
+            {
+                "id": "A",
+                "text": "la cmdlet Set-MgUserLicense"
+            },
+            {
+                "id": "B",
+                "text": "la section Gouvernance d'identité dans le centre d'administration Microsoft Entra"
+            },
+            {
+                "id": "C",
+                "text": "la section Groupes dans le centre d'administration Microsoft Entra"
+            },
+            {
+                "id": "D",
+                "text": "la cmdlet Update-MgGroup"
+            }
+        ],
+        "correctAnswer": "A"
+    },
+    {
+        "id": "question-87",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Vous avez un abonnement Azure nommer Sub1 qui contient les ressources indiquées dans le tableau suivant. Sub1 contains the managed identities shown in the following table. Sub1 has the role-based access control (RBAC) role assignments shown in the following table. For each of the following statements, select Yes if the statement is true. Otherwise, select No.",
+        "answers": [],
+        "correctAnswer": ""
+    },
+    {
+        "id": "question-88",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Vous avez un abonnement Azure qui contient un compte Azure Automation nommé Automation1. Vous devez accorder à Automation1 l'accès aux ressources Azure. La solution doit répondre aux exigences suivantes : • Assurer que toutes les permissions accordées à Automation1 sont supprimées lorsque le compte est supprimé. • Minimiser l'effort administratif. Que devriez-vous utiliser ?",
+        "answers": [
+            {
+                "id": "A",
+                "text": "un secret client"
+            },
+            {
+                "id": "B",
+                "text": "une identité gérée assignée par le système"
+            },
+            {
+                "id": "C",
+                "text": "un certificat"
+            },
+            {
+                "id": "D",
+                "text": "une identité gérée assignée par l'utilisateur"
+            }
+        ],
+        "correctAnswer": "B"
+    },
+    {
+        "id": "question-89",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Vous avez un locataire Microsoft Entra nommé contoso.com qui contient une application d'entreprise nommée App1. Un entrepreneur utilise les identifiants de user1@outlook.com. Vous devez vous assurer que vous pouvez fournir à l'entrepreneur un accès à App1. L'entrepreneur doit être en mesure de s'authentifier en tant que user1@outlook.com. Que devez-vous faire ?",
+        "answers": [
+            {
+                "id": "A",
+                "text": "Ajouter un nom de domaine personnalisé à contoso.com."
+            },
+            {
+                "id": "B",
+                "text": "Configurer les paramètres de collaboration externe."
+            },
+            {
+                "id": "C",
+                "text": "Créer un compte d'utilisateur invité dans contoso.com."
+            },
+            {
+                "id": "D",
+                "text": "Ajouter un fournisseur d'identité WS-Fed."
+            }
+        ],
+        "correctAnswer": "C"
+    },
+    {
+        "id": "question-90",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Vous avez deux locataires Microsoft Entra nommés contoso.com et fabrikam.com. Contoso.com contient les groupes indiqués dans le tableau suivant. Vous configurez la synchronisation inter-locataires de contoso.com à fabrikam.com et activez la synchronisation inter-locataires pour User3 et Group2. Pour chacune des déclarations suivantes, sélectionnez Oui si la déclaration est vraie. Sinon, sélectionnez Non. REMARQUE : Chaque sélection correcte vaut un point.",
+        "answers": [],
+        "correctAnswer": ""
+    },
+    {
+        "id": "question-91",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Vous avez une organisation Microsoft Exchange qui utilise un espace d'adresses SMTP de contoso.com. Plusieurs utilisateurs utilisent leur adresse e-mail contoso.com pour une inscription en libre-service à Microsoft Entra. Vous obtenez des privilèges d'administrateur global pour le locataire Microsoft Entra qui contient les utilisateurs auto-certifiés. Vous devez empêcher les utilisateurs de créer des comptes d'utilisateur dans le locataire Microsoft Entra contoso.com pour une inscription en libre-service aux services Microsoft 365. Quel cmdlet PowerShell devez-vous exécuter?",
+        "answers": [
+            {
+                "id": "A",
+                "text": "Mettre à jour la politique d'autorisation MgPolicy"
+            },
+            {
+                "id": "B",
+                "text": "Mettre à jour le domaine Mg"
+            },
+            {
+                "id": "C",
+                "text": "Mettre à jour la politique de concession de permission MgPolicyExclude"
+            },
+            {
+                "id": "D",
+                "text": "Mettre à jour la configuration de fédération du domaine Mg"
+            }
+        ],
+        "correctAnswer": "A"
+    },
+    {
+        "id": "question-92",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Vous avez un locataire Microsoft Entra qui contient les utilisateurs montrés dans le tableau suivant. Vous ajoutez une application d'entreprise nommée App1 et configurez les paramètres d'auto-service suivants : • Autoriser les utilisateurs à demander l'accès à cette application : Oui • À quel groupe les utilisateurs assignés doivent-ils être ajoutés : Groupe1 • Exiger une approbation avant d'accorder l'accès à cette application : Oui • Qui est autorisé à approuver l'accès à cette application : Utilisateur2 Quels utilisateurs peuvent demander l'accès à App1 ?",
+        "answers": [
+            {
+                "id": "A",
+                "text": "Utilisateur3 uniquement"
+            },
+            {
+                "id": "B",
+                "text": "Utilisateur2 et Utilisateur3 uniquement"
+            },
+            {
+                "id": "C",
+                "text": "Utilisateur1 et Utilisateur3 uniquement"
+            },
+            {
+                "id": "D",
+                "text": "Utilisateur1, Utilisateur2 et Utilisateur3Réponse : D"
+            }
+        ],
+        "correctAnswer": ""
+    },
+    {
+        "id": "question-93",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Vous avez un locataire Microsoft Entra qui contient les utilisateurs indiqués dans le tableau suivant. Le locataire contient les identités indiquées dans le tableau suivant. Quels utilisateurs peuvent créer des attributs de sécurité personnalisés et à quelles identités les attributs peuvent-ils être attribués ? Pour répondre, sélectionnez les options appropriées dans la zone de réponse. REMARQUE : Chaque sélection correcte vaut un point.",
+        "answers": [],
+        "correctAnswer": ""
+    },
+    {
+        "id": "question-94",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Vous avez un locataire Microsoft Entra nommé contoso.com qui contient une application d'entreprise nommée App1. Un sous-traitant utilise les identifiants de user1@outlook.com. Vous devez vous assurer que vous pouvez fournir au sous-traitant un accès à App1. Le sous-traitant doit être en mesure de s'authentifier en tant que user1@outlook.com. Que devez-vous faire ?",
+        "answers": [
+            {
+                "id": "A",
+                "text": "Mettre en œuvre la synchronisation Microsoft Entra Connect."
+            },
+            {
+                "id": "B",
+                "text": "Créer un compte d'utilisateur invité dans contoso.com."
+            },
+            {
+                "id": "C",
+                "text": "Configurer les paramètres de collaboration externe."
+            },
+            {
+                "id": "D",
+                "text": "Exécuter la commande New-MgUser."
+            }
+        ],
+        "correctAnswer": "B"
+    },
+    {
+        "id": "question-95",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Vous avez un abonnement Microsoft 365 E5 qui contient deux groupes nommés Group1 et Group2 et les utilisateurs indiqués dans le tableau suivant. Group2 est membre de Group1. Vous configurez la synchronisation entre locataires avec une organisation partenaire nommée fabrikam.com en utilisant les configurations suivantes : • Statut de provisionnement : Activé • Utilisateurs et groupes : Group1 • Prévenir la suppression accidentelle : 500 • Portée : Synchroniser uniquement les utilisateurs et groupes attribués • Filtre de portée : Département ÉGAL À Marketing Dans les paramètres de synchronisation entre locataires, vous définissez le mode de provisionnement sur Automatique. Pour chacune des déclarations suivantes, sélectionnez Oui si l'énoncé est vrai. Sinon, sélectionnez Non. REMARQUE : Chaque sélection correcte vaut un point.",
+        "answers": [],
+        "correctAnswer": ""
+    },
+    {
+        "id": "question-96",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "POINT D'ACCÈS Votre réseau contient un domaine Active Directory Domain Services (AD DS) sur site nommé contoso.com. Contoso.com contient les identités indiquées dans le tableau suivant. Vous avez un locataire Microsoft Entra qui contient un utilisateur nommé User1. Vous déployez Microsoft Entra Cloud Sync et configurez un filtre de portée en utilisant la chaîne suivante :CN=Group1,OU=OU1,DC=contoso,DC=com. Pour chacune des déclarations suivantes, sélectionnez Oui si la déclaration est vraie. Sinon, sélectionnez Non. REMARQUE : Chaque sélection correcte vaut un point.",
+        "answers": [],
+        "correctAnswer": ""
+    },
+    {
+        "id": "question-97",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Vous avez un abonnement Microsoft 365 E5 qui contient un site Microsoft SharePoint Online nommé Site1 et une équipe Microsoft Teams nommée Team1. L'abonnement contient cinq groupes de sécurité nommés Group1, Group2, Group3, Group4 et Group5. Vous devez mettre en œuvre des packages d'accès pour Site1 et Team1. La solution doit répondre aux exigences suivantes : • Les membres de Group3 doivent pouvoir demander un accès à Site1 uniquement. • Les membres de Group1 doivent pouvoir demander un accès à Site1 et Team1. • Les membres de Group4 doivent pouvoir demander un accès à Site1 et Team1. • Seuls les membres de Group2 doivent pouvoir approuver les demandes de package d'accès des membres de Group1. • Seuls les membres de Group5 doivent pouvoir approuver les demandes de package d'accès des membres de Group3 et Group4. Quel est le nombre minimum de packages d'accès que vous devez créer ?",
+        "answers": [
+            {
+                "id": "A",
+                "text": "2"
+            },
+            {
+                "id": "B",
+                "text": "3"
+            },
+            {
+                "id": "C",
+                "text": "4"
+            },
+            {
+                "id": "D",
+                "text": "5"
+            }
+        ],
+        "correctAnswer": "B"
+    },
+    {
+        "id": "question-98",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Vous avez un abonnement Microsoft 365 E5 qui contient les groupes présentés dans le tableau suivant. Vous prévoyez de gérer les cycles de vie des groupes. Quels groupes peuvent être définis comme expirant, et quelle est la durée de vie minimale que vous pouvez définir pour un groupe ? Pour répondre, sélectionnez les options appropriées dans la zone de réponse. REMARQUE : Chaque sélection correcte vaut un point.",
+        "answers": [],
+        "correctAnswer": ""
+    },
+    {
+        "id": "question-99",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Vous avez deux locataires Microsoft Entra nommés contoso.com et fabrikam.com. Contoso.com contient les utilisateurs indiqués dans le tableau suivant. Vous configurez la synchronisation inter-locataires de contoso.com à fabrikam.com en utilisant les paramètres suivants : • Utilisateurs et groupes : Groupe1 • Mode de provisionnement : Automatique • Mappages d'attributs o Champ d'objet source : Filtre1, Filtre2Filtre1 est configuré comme indiqué dans le tableau suivant. Filtre2 est configuré comme indiqué dans le tableau suivant. Pour chacune des déclarations suivantes, sélectionnez Oui si la déclaration est vraie. Sinon, sélectionnez Non.",
+        "answers": [],
+        "correctAnswer": ""
+    },
+    {
+        "id": "question-100",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Vous avez un locataire Microsoft Entra. Vous avez les environnements de bureau pour les utilisateurs finaux montrés dans le tableau suivant. Vous devez déployer Global Secure Access. Dans quels environnements pouvez-vous installer le client Global Secure Access ?",
+        "answers": [
+            {
+                "id": "A",
+                "text": "Entrepreneurs, Développeurs, Travailleurs en première ligne, Personnel de bureau et Cadres supérieurs"
+            },
+            {
+                "id": "B",
+                "text": "Travailleurs en première ligne et Cadres supérieurs uniquement"
+            },
+            {
+                "id": "C",
+                "text": "Entrepreneurs et Personnel de bureau uniquement"
+            },
+            {
+                "id": "D",
+                "text": "Développeurs, Personnel de bureau et Cadres supérieurs uniquement"
+            }
+        ],
+        "correctAnswer": "D"
+    },
+    {
+        "id": "question-101",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Vous avez un abonnement Microsoft 365 E5 qui contient les utilisateurs indiqués dans le tableau ci-dessous. Vous configurez l'accès Internet Microsoft Entra. Quels utilisateurs peuvent gérer l'accès Internet Microsoft Entra ?",
+        "answers": [
+            {
+                "id": "A",
+                "text": "Utilisateur1 seulement"
+            },
+            {
+                "id": "B",
+                "text": "Utilisateur2 seulement"
+            },
+            {
+                "id": "C",
+                "text": "Utilisateur3 seulement"
+            },
+            {
+                "id": "D",
+                "text": "Utilisateur1 et Utilisateur2 seulement"
+            }
+        ],
+        "correctAnswer": "D"
+    },
+    {
+        "id": "question-102",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Votre entreprise dispose d'un locataire Microsoft 365. L'entreprise possède un centre d'appel qui comprend 300 utilisateurs. Dans le centre d'appel, les utilisateurs partagent des ordinateurs de bureau et peuvent utiliser un ordinateur différent chaque jour. Les ordinateurs du centre d'appel ne sont PAS configurés pour une identification biométrique. Les utilisateurs sont interdits d'avoir un téléphone portable dans le centre d'appel. Vous devez exiger une authentification multifacteur (MFA) pour les utilisateurs du centre d'appel lorsqu'ils accèdent aux services Microsoft 365. Que devez-vous inclure dans la solution ?",
+        "answers": [
+            {
+                "id": "A",
+                "text": "un emplacement réseau nommé"
+            },
+            {
+                "id": "B",
+                "text": "l'application Microsoft Authenticator"
+            },
+            {
+                "id": "C",
+                "text": "l'authentification Windows Hello pour les entreprises"
+            },
+            {
+                "id": "D",
+                "text": "des jetons FIDO2"
+            }
+        ],
+        "correctAnswer": "D"
+    },
+    {
+        "id": "question-103",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Vous avez un locataire Azure Active Directory (Azure AD) nommé contoso.com. Tous les utilisateurs qui exécutent des applications enregistrées dans Azure AD sont soumis à des politiques d'accès conditionnel. Vous devez empêcher les utilisateurs d'utiliser l'authentification héritée. Que devez-vous inclure dans les politiques d'accès conditionnel pour filtrer les tentatives d'authentification héritée ?",
+        "answers": [
+            {
+                "id": "A",
+                "text": "une condition d'applications ou d'actions cloud"
+            },
+            {
+                "id": "B",
+                "text": "une condition de risque utilisateur"
+            },
+            {
+                "id": "C",
+                "text": "une condition d'applications clientes"
+            },
+            {
+                "id": "D",
+                "text": "une condition de risque de connexion"
+            }
+        ],
+        "correctAnswer": "C"
+    },
+    {
+        "id": "question-104",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Vous avez un locataire Microsoft Entra qui contient les utilisateurs indiqués dans le tableau suivant. Le locataire a les méthodes d'authentification indiquées dans le tableau suivant. Quels utilisateurs se connecteront aux applications cloud en utilisant la correspondance de numéro ?",
+        "answers": [
+            {
+                "id": "A",
+                "text": "Utilisateur1 uniquement"
+            },
+            {
+                "id": "B",
+                "text": "Utilisateur2 uniquement"
+            },
+            {
+                "id": "C",
+                "text": "Utilisateur3 uniquement"
+            },
+            {
+                "id": "D",
+                "text": "Utilisateur1 et Utilisateur2 uniquement"
+            }
+        ],
+        "correctAnswer": "A"
+    },
+    {
+        "id": "question-105",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Vous avez un locataire Microsoft 365. Tous les utilisateurs ont des ordinateurs qui fonctionnent sous Windows 10. La plupart des ordinateurs sont la propriété de l'entreprise et sont joints à Azure Active Directory (Azure AD). Certains ordinateurs sont la propriété des utilisateurs et ne sont enregistrés qu'à Azure AD. Vous devez empêcher les utilisateurs qui se connectent à Microsoft SharePoint Online sur leur ordinateur personnel de télécharger ou de synchroniser des fichiers. Les autres utilisateurs ne doivent PAS être restreints. Quel type de politique devez-vous créer ?",
+        "answers": [
+            {
+                "id": "A",
+                "text": "une politique d'activité Microsoft Cloud App Security qui a des actions de gouvernance Microsoft Office 365 configurées"
+            },
+            {
+                "id": "B",
+                "text": "une politique d'accès conditionnel Azure AD qui a des contrôles de session configurés"
+            },
+            {
+                "id": "C",
+                "text": "une politique d'accès conditionnel Azure AD qui a des conditions d'applications client configurées"
+            },
+            {
+                "id": "D",
+                "text": "une politique de découverte d'applications Microsoft Cloud App Security qui a des actions de gouvernance configurées"
+            }
+        ],
+        "correctAnswer": "B"
+    },
+    {
+        "id": "question-106",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Vous avez un domaine Active Directory qui se synchronise avec un locataire Azure Active Directory (Azure AD). Le réseau local contient un serveur VPN qui s'authentifie auprès du domaine Active Directory local. Le serveur VPN ne prend PAS en charge l'authentification multi facteur Azure (MFA). Vous devez recommander une solution pour fournir la MFA Azure pour les connexions VPN. Que devriez-vous inclure dans la recommandation ?",
+        "answers": [
+            {
+                "id": "A",
+                "text": "Proxy d'application Azure AD"
+            },
+            {
+                "id": "B",
+                "text": "Proxy de protection par mot de passe Azure AD"
+            },
+            {
+                "id": "C",
+                "text": "Serveur de stratégie réseau (NPS)"
+            },
+            {
+                "id": "D",
+                "text": "Proxy d'authentification par passage"
+            }
+        ],
+        "correctAnswer": "C"
+    },
+    {
+        "id": "question-107",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Vous avez un locataire Microsoft Entra. Vous avez les appareils montrés dans le tableau suivant. Vous configurez l'accès Internet Microsoft Entra pour le locataire. Sur quels appareils pouvez-vous utiliser l'accès sécurisé mondial ?",
+        "answers": [
+            {
+                "id": "A",
+                "text": "Appareil1 uniquement"
+            },
+            {
+                "id": "B",
+                "text": "Appareil3 uniquement"
+            },
+            {
+                "id": "C",
+                "text": "Appareil1 et Appareil2 uniquement"
+            },
+            {
+                "id": "D",
+                "text": "Appareil1, Appareil3 et Appareil4 uniquement"
+            }
+        ],
+        "correctAnswer": "B"
+    },
+    {
+        "id": "question-108",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Vous avez un locataire Microsoft 365 E5. Vous achetez une application cloud nommée App1.Vous devez activer la surveillance des sessions en temps réel d'App1 en utilisant Microsoft Cloud App Security. Dans quel ordre devez-vous effectuer les actions ? Pour répondre, déplacez les actions appropriées de la liste des actions vers la zone de réponse et arrangez-les dans le bon ordre.Sélectionner et placer :",
+        "answers": [],
+        "correctAnswer": ""
+    },
+    {
+        "id": "question-109",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Vous avez un locataire Microsoft 365. Tous les utilisateurs ont des téléphones portables et des ordinateurs portables. Les utilisateurs travaillent fréquemment à distance, dans des endroits qui n'ont pas accès au Wi-Fi ou à la connectivité mobile. Lorsqu'ils travaillent à distance, les utilisateurs connectent leur ordinateur portable à un réseau câblé qui a accès à Internet. Vous prévoyez de mettre en œuvre l'authentification à plusieurs facteurs (MFA). Quelle méthode d'authentification MFA les utilisateurs peuvent-ils utiliser depuis l'emplacement distant ?",
+        "answers": [
+            {
+                "id": "A",
+                "text": "une notification via l'application Microsoft Authenticator"
+            },
+            {
+                "id": "B",
+                "text": "un mot de passe d'application"
+            },
+            {
+                "id": "C",
+                "text": "Windows Hello pour les entreprises"
+            },
+            {
+                "id": "D",
+                "text": "SMS"
+            }
+        ],
+        "correctAnswer": "C"
+    },
+    {
+        "id": "question-110",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Remarque : Cette question fait partie d'une série de questions qui présentent le même scénario. Chaque question de la série contient une solution unique qui pourrait répondre aux objectifs énoncés. Certains ensembles de questions peuvent avoir plus d'une solution correcte, tandis que d'autres pourraient ne pas avoir de solution correcte. Après avoir répondu à une question dans cette section, vous ne pourrez pas y revenir. En conséquence, ces questions n'apparaîtront pas dans l'écran de révision. Vous avez un locataire Microsoft 365. Tous les utilisateurs doivent utiliser l'application Microsoft Authenticator pour l'authentification multi-facteurs (MFA) lors de l'accès aux services Microsoft 365. Certains utilisateurs signalent qu'ils ont reçu une invite MFA sur leur application Microsoft Authenticator sans avoir initié une demande de connexion. Vous devez bloquer automatiquement les utilisateurs lorsqu'ils signalent une demande MFA qu'ils n'ont pas initiée. Solution : Depuis le portail Azure, vous configurez les paramètres de notifications pour l'authentification multi-facteurs (MFA). Cela atteint-il l'objectif ?",
+        "answers": [
+            {
+                "id": "A",
+                "text": "Oui"
+            },
+            {
+                "id": "B",
+                "text": "Non"
+            }
+        ],
+        "correctAnswer": "B"
+    },
+    {
+        "id": "question-111",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Remarque : Cette question fait partie d'une série de questions présentant le même scénario. Chaque question de la série contient une solution unique qui pourrait répondre aux objectifs énoncés. Certains ensembles de questions peuvent avoir plus d'une solution correcte, tandis que d'autres peuvent ne pas avoir de solution correcte. Après avoir répondu à une question de cette section, vous ne pourrez PAS y revenir. En conséquence, ces questions n'apparaîtront pas dans l'écran de révision. Vous avez un locataire Microsoft 365. Tous les utilisateurs doivent utiliser l'application Microsoft Authenticator pour l'authentification multi-facteur (MFA) lorsqu'ils accèdent aux services Microsoft 365. Certains utilisateurs signalent qu'ils ont reçu une demande MFA sur leur application Microsoft Authenticator sans avoir initié une demande de connexion. Vous devez bloquer automatiquement les utilisateurs lorsqu'ils signalent une demande MFA qu'ils n'ont pas initiée. Solution : Depuis le portail Azure, vous configurez les paramètres de verrouillage de compte pour l'authentification multi-facteur (MFA). Cela répond-il à l'objectif ?",
+        "answers": [
+            {
+                "id": "A",
+                "text": "Oui"
+            },
+            {
+                "id": "B",
+                "text": "Non"
+            }
+        ],
+        "correctAnswer": "B"
+    },
+    {
+        "id": "question-112",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Remarque : Cette question fait partie d'une série de questions présentant le même scénario. Chaque question de la série contient une solution unique qui pourrait répondre aux objectifs énoncés. Certaines séries de questions peuvent avoir plus d'une solution correcte, tandis que d'autres peuvent ne pas avoir de solution correcte. Après avoir répondu à une question de cette section, vous ne pourrez PAS y retourner. En conséquence, ces questions n'apparaîtront pas dans l'écran de révision. Vous avez un locataire Microsoft 365. Tous les utilisateurs doivent utiliser l'application Microsoft Authenticator pour l'authentification multifacteur (MFA) lors de l'accès aux services Microsoft 365. Certains utilisateurs signalent qu'ils ont reçu une demande de MFA sur leur application Microsoft Authenticator sans avoir initié une demande de connexion. Vous devez bloquer automatiquement les utilisateurs lorsqu'ils signalent une demande MFA qu'ils n'ont pas initiée. Solution : Depuis le portail Azure, vous configurez les paramètres de blocage/déblocage des utilisateurs pour l'authentification multifacteur (MFA). Cela atteint-il l'objectif ?",
+        "answers": [
+            {
+                "id": "A",
+                "text": "Oui"
+            },
+            {
+                "id": "B",
+                "text": "Non"
+            }
+        ],
+        "correctAnswer": "B"
+    },
+    {
+        "id": "question-113",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Vous avez un locataire Microsoft 365. Vous devez identifier les utilisateurs qui ont divulgué leurs informations d'identification. La solution doit répondre aux exigences suivantes : ✑ Identifier les connexions des utilisateurs soupçonnés d'avoir divulgué leurs informations d'identification. ✑ Marquer les connexions comme un événement à haut risque. ✑ Appliquer immédiatement un contrôle pour atténuer le risque, tout en permettant à l'utilisateur d'accéder aux applications. Que devez-vous utiliser ? Pour répondre, sélectionnez les options appropriées dans la zone de réponse. REMARQUE : Chaque sélection correcte vaut un point. Zone chaude :",
+        "answers": [],
+        "correctAnswer": ""
+    },
+    {
+        "id": "question-114",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Vous avez un locataire Azure Active Directory (Azure AD) qui contient les utilisateurs indiqués dans le tableau suivant. Vous prévoyez de mettre en œuvre Azure AD Identity Protection. Quels utilisateurs peuvent configurer la stratégie de risque utilisateur, et quels utilisateurs peuvent consulter le rapport des utilisateurs à risque ? Pour répondre, sélectionnez les options appropriées dans la zone de réponse. REMARQUE : Chaque sélection correcte vaut un point. Zone active :",
+        "answers": [],
+        "correctAnswer": ""
+    },
+    {
+        "id": "question-115",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Vous avez un locataire Azure Active Directory (Azure AD) qui contient un groupe nommé Group3 et une unité administrative nommée Department1. Department1 a les utilisateurs montrés dans l'exposition des utilisateurs. (Cliquez sur l'onglet Utilisateurs.) Le Département1 a les groupes affichés dans l'exposition des Groupes. (Cliquez sur l'onglet Groupes.) Le Département1 a les attributions d'administrateur utilisateur montrées dans l'exposition des Attributions. (Cliquez sur l'onglet Attributions.) Les membres du Groupe2 sont présentés dans l'exposition du Groupe2. (Cliquez sur l'onglet Groupe2.) Pour chacune des déclarations suivantes, sélectionnez Oui si la déclaration est vraie. Sinon, sélectionnez Non. REMARQUE : Chaque sélection correcte vaut un point. Zone chaude :",
+        "answers": [],
+        "correctAnswer": ""
+    },
+    {
+        "id": "question-116",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Remarque : Cette question fait partie d'une série de questions qui présentent le même scénario. Chaque question de la série contient une solution unique qui pourrait répondre aux objectifs énoncés. Certains ensembles de questions peuvent avoir plus d'une bonne solution, tandis que d'autres peuvent ne pas avoir de solution correcte. Après avoir répondu à une question dans cette section, vous ne pourrez PAS y revenir. En conséquence, ces questions n'apparaîtront pas à l'écran de révision. Vous disposez d'un locataire Microsoft 365. Tous les utilisateurs doivent utiliser l'application Microsoft Authenticator pour l'authentification multifacteur (MFA) lors de l'accès aux services Microsoft 365. Certains utilisateurs signalent qu'ils ont reçu une invite MFA sur leur application Microsoft Authenticator sans avoir initié de demande de connexion. Vous devez automatiquement bloquer les utilisateurs lorsqu'ils signalent une demande MFA qu'ils n'ont pas initiée. Solution : À partir du portail Azure, vous configurez les paramètres d'alerte de fraude pour l'authentification multifacteur (MFA). Cela répond-il à l'objectif ?",
+        "answers": [
+            {
+                "id": "A",
+                "text": "Oui"
+            },
+            {
+                "id": "B",
+                "text": "Non"
+            }
+        ],
+        "correctAnswer": "A"
+    },
+    {
+        "id": "question-117",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Vous avez un locataire Microsoft 365. Tous les utilisateurs disposent de téléphones portables et d'ordinateurs portables. Les utilisateurs travaillent fréquemment depuis des lieux distants qui n'ont pas d'accès Wi-Fi ou de connectivité mobile. Lorsqu'ils travaillent depuis ces lieux distants, les utilisateurs connectent leur ordinateur portable à un réseau câblé qui a accès à Internet. Vous prévoyez de mettre en œuvre une authentification multifacteur (MFA). Quelle méthode d'authentification MFA les utilisateurs peuvent-ils utiliser depuis l'emplacement distant ?",
+        "answers": [
+            {
+                "id": "A",
+                "text": "une notification via l'application Microsoft Authenticator"
+            },
+            {
+                "id": "B",
+                "text": "email"
+            },
+            {
+                "id": "C",
+                "text": "questions de sécurité"
+            },
+            {
+                "id": "D",
+                "text": "un code de vérification de l'application Microsoft Authenticator"
+            }
+        ],
+        "correctAnswer": "D"
+    },
+    {
+        "id": "question-118",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "POINT D'ACCÈS Vous avez un locataire Microsoft 365.Vous créez un emplacement nommé Pays À Haut Risque qui contient une liste de pays à haut risque. Vous devez limiter le temps pendant lequel un utilisateur peut rester authentifié lorsqu'il se connecte depuis un pays à haut risque. Que devez-vous configurer dans une politique d'accès conditionnel ? Pour répondre, sélectionnez les options appropriées dans la zone de réponse. REMARQUE : Chaque sélection correcte vaut un point. Zone chaude :",
+        "answers": [],
+        "correctAnswer": ""
+    },
+    {
+        "id": "question-119",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Un utilisateur nommé User1 tente de se connecter au locataire en entrant les mots de passe incorrects suivants : ✑ Pa55w0rd12 ✑ Pa55w0rd12 ✑ Pa55w0rd12 ✑ Pa55w.rd12 ✑ Pa55w.rd123 ✑ Pa55w.rd123 ✑ Pa55w.rd123 ✑ Pa55word12 ✑ Pa55word12 ✑ Pa55word12 ✑ Pa55w.rd12 Vous devez identifier combien de tentatives de connexion ont été enregistrées pour User1, et comment User1 peut débloquer son compte avant l'expiration de la durée de verrouillage de 300 secondes. Que devez-vous identifier ? Pour répondre, sélectionnez le choix approprié. NOTE : Chaque sélection correcte vaut un point.",
+        "answers": [],
+        "correctAnswer": ""
+    },
+    {
+        "id": "question-120",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Vous disposez d'un locataire Azure Active Directory (Azure AD) dont les paramètres de sécurité par défaut sont désactivés. Vous créez une stratégie d'accès conditionnel comme indiqué dans l'illustration suivante. Utilisez les menus déroulants pour sélectionner la réponse qui complète chaque affirmation en vous basant sur les informations présentées dans le graphique. REMARQUE : chaque réponse correcte vaut un point.",
+        "answers": [],
+        "correctAnswer": ""
+    },
+    {
+        "id": "question-121",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Vous disposez d'un locataire Azure Active Directory (Azure AD) qui contient un utilisateur nommé SecAdmin1. SecAdmin1 se voit attribuer le rôle d'administrateur de sécurité. SecAdmin1 signale qu'elle ne peut pas réinitialiser les mots de passe à partir du portail Azure AD Identity Protection. Vous devez vous assurer que SecAdmin1 peut gérer les mots de passe et invalider les sessions pour le compte des utilisateurs non administratifs. La solution doit respecter le principe du Privilège minimum. Quel rôle devez-vous attribuer à SecAdmin1 ?",
+        "answers": [
+            {
+                "id": "A",
+                "text": "Administrateur d'authentification"
+            },
+            {
+                "id": "B",
+                "text": "Administrateur du service d'assistance"
+            },
+            {
+                "id": "C",
+                "text": "Administrateur d'authentification privilégié"
+            },
+            {
+                "id": "D",
+                "text": "Opérateur de sécurité"
+            }
+        ],
+        "correctAnswer": "B"
+    },
+    {
+        "id": "question-122",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Vous configurez la protection par mot de passe Azure Active Directory (Azure AD) comme indiqué dans l'illustration. (Cliquez sur l'onglet Illustration.) Vous évaluez les mots de passe suivants : ✑ Pr0jectlitw@re ✑ T@ilw1nd ✑ C0nt0s0 Quels mots de passe seront bloqués ?",
+        "answers": [
+            {
+                "id": "A",
+                "text": "Pr0jectlitw@re et T@ilw1nd uniquement"
+            },
+            {
+                "id": "B",
+                "text": "C0nt0s0 uniquement"
+            },
+            {
+                "id": "C",
+                "text": "C0nt0s0, Pr0jectlitw@re et T@ilw1nd"
+            },
+            {
+                "id": "D",
+                "text": "C0nt0s0 et T@ilw1nd uniquement"
+            }
+        ],
+        "correctAnswer": "C"
+    },
+    {
+        "id": "question-123",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Vous disposez d'un tenant Microsoft 365. Tous les utilisateurs possèdent un téléphone portable et un ordinateur portable. Les utilisateurs travaillent fréquemment à distance, dans des endroits qui ne disposent pas d'accès Wi-Fi ni de connectivité mobile. Lorsqu'ils travaillent à distance, les utilisateurs connectent leur ordinateur portable à un réseau câblé disposant d'un accès Internet. Vous prévoyez de mettre en œuvre l'authentification multifacteur (MFA). Quelle méthode d'authentification MFA les utilisateurs peuvent-ils utiliser à distance ?",
+        "answers": [
+            {
+                "id": "A",
+                "text": "un code de vérification provenant de l'application Microsoft Authenticator"
+            },
+            {
+                "id": "B",
+                "text": "des questions de sécurité"
+            },
+            {
+                "id": "C",
+                "text": "la voix"
+            },
+            {
+                "id": "D",
+                "text": "un SMS"
+            }
+        ],
+        "correctAnswer": "A"
+    },
+    {
+        "id": "question-124",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Vous disposez d'un locataire Azure Active Directory (Azure AD) qui contient les utilisateurs indiqués dans le tableau suivant. L'utilisateur 2 signale qu'il ne peut configurer l'authentification multifacteur (MFA) que pour utiliser l'application Microsoft Authenticator. Vous devez vous assurer que l'utilisateur 2 peut configurer d'autres méthodes MFA. Quelle configuration est nécessaire et quel utilisateur doit effectuer cette configuration ? Pour répondre, sélectionnez les options appropriées dans la zone de réponse. REMARQUE : chaque sélection correcte vaut un point.",
+        "answers": [],
+        "correctAnswer": ""
+    },
+    {
+        "id": "question-125",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Vous disposez d'un locataire Azure Active Directory (Azure AD). Vous configurez la réinitialisation du mot de passe en libre-service (SSPR) à l'aide des paramètres suivants : ✑ Exiger que les utilisateurs s'inscrivent lors de la connexion : Oui ✑ Nombre de méthodes requises pour la réinitialisation : 1 Quelle est la méthode d'authentification valide disponible pour les utilisateurs ?",
+        "answers": [
+            {
+                "id": "A",
+                "text": "Une conversation Microsoft Teams"
+            },
+            {
+                "id": "B",
+                "text": "Une notification d'application mobile"
+            },
+            {
+                "id": "C",
+                "text": "Un code d'application mobile"
+            },
+            {
+                "id": "D",
+                "text": "Un jeton de sécurité FIDO2"
+            }
+        ],
+        "correctAnswer": "C"
+    },
+    {
+        "id": "question-126",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Vous disposez d'un locataire Azure Active Directory (Azure AD) qui utilise Azure AD Identity Protection et contient les ressources indiquées dans le tableau suivant. L'authentification multifacteur (MFA) Azure est activée pour tous les utilisateurs. L'utilisateur 1 déclenche une alerte de gravité moyenne qui nécessite une enquête supplémentaire. Vous devez obliger l'utilisateur 1 à réinitialiser son mot de passe lors de sa prochaine connexion. La solution doit minimiser les efforts administratifs. Que devez-vous faire ?",
+        "answers": [
+            {
+                "id": "A",
+                "text": "Reconfigurer le risque utilisateur, politique à déclencher en cas de gravité moyenne ou faible."
+            },
+            {
+                "id": "B",
+                "text": "Marquer l'utilisateur 1 comme compromis."
+            },
+            {
+                "id": "C",
+                "text": "Réinitialiser l'enregistrement Azure MIFA pour l'utilisateur 1."
+            },
+            {
+                "id": "D",
+                "text": "Configurer une politique de risque de connexion."
+            }
+        ],
+        "correctAnswer": "B"
+    },
+    {
+        "id": "question-127",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Vous disposez d'un locataire Azure Active Directory (Azure AD) qui contient les utilisateurs indiqués dans le tableau suivant. Dans Azure AD Identity Protection, vous configurez une stratégie de risque utilisateur qui comporte les paramètres suivants : ✑ Affectations : - Utilisateurs : Groupe1 - Risque utilisateur : Faible et supérieur ✑ Contrôles : - Accès : Bloquer l'accès ✑ Appliquer la stratégie : Activé Dans Azure AD Identify Protection, vous configurez une stratégie de risque de connexion qui comporte les paramètres suivants : ✑ Affectations : - Utilisateurs : Groupe2 - Risque lié à la connexion : faible et supérieur ✑ Contrôles : - Accès : exiger une authentification multifacteur ✑ Appliquer la stratégie : activé Pour chacune des affirmations suivantes, sélectionnez Oui si l'affirmation est vraie. Sinon, sélectionnez Non. REMARQUE : chaque sélection correcte vaut un point. Zone sensible :",
+        "answers": [],
+        "correctAnswer": ""
+    },
+    {
+        "id": "question-128",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Vous disposez d'un locataire Azure Active Directory (Azure AD). Vous configurez la réinitialisation du mot de passe en libre-service (SSPR) à l'aide des paramètres suivants : ✑ Exiger que les utilisateurs s'inscrivent lors de la connexion : Oui ✑ Nombre de méthodes requises pour la réinitialisation : 1 Quelle est la méthode d'authentification valide disponible pour les utilisateurs ?",
+        "answers": [
+            {
+                "id": "A",
+                "text": "un e-mail envoyé à une adresse extérieure à votre organisation"
+            },
+            {
+                "id": "B",
+                "text": "une carte à puce"
+            },
+            {
+                "id": "C",
+                "text": "un jeton de sécurité FID02"
+            },
+            {
+                "id": "D",
+                "text": "une conversation Microsoft Teams"
+            }
+        ],
+        "correctAnswer": "A"
+    },
+    {
+        "id": "question-129",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Vous disposez d'un locataire Azure Active Directory (Azure AD) qui contient les utilisateurs indiqués dans le tableau suivant. Le locataire dispose des méthodes d'authentification indiquées dans le tableau suivant. Quels utilisateurs se connecteront aux applications cloud en faisant correspondre un numéro affiché dans l'application avec un numéro affiché sur leur téléphone ?",
+        "answers": [
+            {
+                "id": "A",
+                "text": "Utilisateur 1 uniquement"
+            },
+            {
+                "id": "B",
+                "text": "Utilisateur 2 uniquement"
+            },
+            {
+                "id": "C",
+                "text": "Utilisateur 3 uniquement"
+            },
+            {
+                "id": "D",
+                "text": "Utilisateur 1 et utilisateur 2 uniquement"
+            }
+        ],
+        "correctAnswer": "A"
+    },
+    {
+        "id": "question-130",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Vous disposez d'un locataire Azure Active Directory (Azure AD) qui contient un utilisateur nommé User1 et les stratégies d'accès conditionnel indiquées dans le tableau suivant. Vous devez évaluer quelles politiques seront appliquées à l'utilisateur 1 lorsque celui-ci tentera de se connecter à partir de différentes adresses IP. Quelle fonctionnalité devez-vous utiliser ?",
+        "answers": [
+            {
+                "id": "A",
+                "text": "Examens d'accès"
+            },
+            {
+                "id": "B",
+                "text": "Score de sécurité d'identité"
+            },
+            {
+                "id": "C",
+                "text": "Outil « What If »"
+            },
+            {
+                "id": "D",
+                "text": "Outil de test de connectivité réseau Microsoft 365"
+            }
+        ],
+        "correctAnswer": "C"
+    },
+    {
+        "id": "question-131",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Vous disposez d'un abonnement Microsoft 365 E5. Vous devez vous assurer que les utilisateurs ne peuvent accéder aux ressources de l'abonnement qu'à partir d'un appareil sur lequel le client Global Secure Access est connecté. Que devez-vous faire en premier lieu ?",
+        "answers": [
+            {
+                "id": "A",
+                "text": "Activer la signalisation Global Secure Access.B. Activer le balisage pour appliquer les restrictions de locataire.C. Créer un emplacement nommé.D. Créer un réseau distant."
+            }
+        ],
+        "correctAnswer": "A"
+    },
+    {
+        "id": "question-132",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Vous créez une stratégie d'accès conditionnel qui bloque l'accès lorsqu'un utilisateur déclenche une alerte de connexion à haut niveau de gravité. Vous devez tester la stratégie dans les conditions suivantes : ✑ Un utilisateur se connecte depuis un autre pays. ✑ Un utilisateur déclenche un risque de connexion. Que devez-vous utiliser pour effectuer le test ?",
+        "answers": [
+            {
+                "id": "A",
+                "text": "L'outil « Et si » de l'accès conditionnel B. Les journaux de connexion dans Azure Active Directory (Azure AD) C. Les journaux d'activité dans Microsoft Defender pour les applications cloud D. Les examens d'accès dans Azure Active Directory (Azure AD)"
+            }
+        ],
+        "correctAnswer": "A"
+    },
+    {
+        "id": "question-133",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Vous disposez d'un locataire Azure Active Directory (Azure AD) qui contient les utilisateurs indiqués dans le tableau suivant. Vous disposez des emplacements indiqués dans le tableau suivant. Le locataire contient un emplacement nommé qui présente les configurations suivantes : ✑ Nom : Emplacement1 ✑ Marquer comme emplacement approuvé : Activé Plage IPv4 : 10.10.0.0/16 MFA dispose d'une plage d'adresses IP approuvées de 193.17.17.0/24. ✑ Nom : CAPolicy1 ✑ Affectations - Utilisateurs ou identités de charge de travail : Groupe1 - Applications ou actions cloud : Toutes les applications cloud ✑ Conditions - Emplacements : Tous les emplacements approuvés ✑ Contrôles d'accès - Accorder - Accorder l'accès : Exiger une authentification multifacteur - Session : 0 contrôle sélectionné ✑ Activer la stratégie : Activé Pour chacune des affirmations suivantes, sélectionnez Oui si l'affirmation est vraie. Sinon, sélectionnez Non. REMARQUE : chaque sélection correcte vaut un point.",
+        "answers": [],
+        "correctAnswer": ""
+    },
+    {
+        "id": "question-134",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Vous disposez d'un locataire Azure Active Directory (Azure AD) nommé contoso.com pour lequel l'option Code d'accès à usage unique par e-mail pour les invités est définie sur Oui. Vous invitez les utilisateurs invités indiqués dans le tableau suivant. Quels utilisateurs recevront un code d'accès à usage unique, et combien de temps ce code sera-t-il valide ? Pour répondre, sélectionnez les options appropriées dans la zone de réponse. REMARQUE : chaque sélection correcte vaut un point.",
+        "answers": [],
+        "correctAnswer": ""
+    },
+    {
+        "id": "question-135",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Vous disposez d'un locataire Microsoft Entra qui contient les appareils affichés dans le tableau suivant. Vous prévoyez de configurer Microsoft Entra Private Access. Vous déployez le client Global Secure Access sur des appareils compatibles. À partir de quels appareils pouvez-vous utiliser Private Access ?",
+        "answers": [
+            {
+                "id": "A",
+                "text": "Seulement l'appareil 1"
+            },
+            {
+                "id": "B",
+                "text": "Seulement l'appareil 2"
+            },
+            {
+                "id": "C",
+                "text": "Seulement les appareils 2 et 4"
+            },
+            {
+                "id": "D",
+                "text": "Les appareils 1, 2 et 3 uniquement"
+            }
+        ],
+        "correctAnswer": "B"
+    },
+    {
+        "id": "question-136",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Vous avez un abonnement Azure qui contient une base de données Azure SQL nommée db1.Vous déployez une application Web Azure App Service nommée App1 qui fournit des informations sur les produits aux utilisateurs qui se connectent à App1 de manière anonyme.Vous devez fournir à App1 l'accès à db1. La solution doit répondre aux exigences suivantes : • Les identifiants doivent être disponibles uniquement pour App1. • L'effort administratif doit être minimisé. Quel type d'identifiants devez-vous utiliser ?",
+        "answers": [
+            {
+                "id": "A",
+                "text": "une identité managée attribuée par le système"
+            },
+            {
+                "id": "B",
+                "text": "un compte utilisateur Azure Active Directory (Azure AD)"
+            },
+            {
+                "id": "C",
+                "text": "un compte SQL Server"
+            },
+            {
+                "id": "D",
+                "text": "une identité managée attribuée par l'utilisateur"
+            }
+        ],
+        "correctAnswer": "A"
+    },
+    {
+        "id": "question-137",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Vous disposez d'un abonnement Azure qui contient les rôles personnalisés illustrés dans le tableau ci-dessous. Vous devez créer un rôle d'abonnement Azure personnalisé nommé Role3 en utilisant le portail Azure. Role3 utilisera les autorisations de base d'un rôle existant.Quels rôles pouvez-vous cloner pour créer Role3 ?",
+        "answers": [
+            {
+                "id": "A",
+                "text": "Seulement Role2"
+            },
+            {
+                "id": "B",
+                "text": "Seulement les rôles d'abonnement Azure intégrés"
+            },
+            {
+                "id": "C",
+                "text": "Les rôles d'abonnement Azure intégrés et Role2 seulement"
+            },
+            {
+                "id": "D",
+                "text": "Les rôles d'abonnement Azure intégrés et les rôles intégrés d'Azure AD seulement"
+            }
+        ],
+        "correctAnswer": "C"
+    },
+    {
+        "id": "question-138",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Votre réseau local contient un domaine Active Directory qui utilise la synchronisation Microsoft Entra Connect pour synchroniser avec un locataire Microsoft Entra. Vous devez configurer la synchronisation Microsoft Entra Connect afin de répondre aux exigences suivantes : • Les connexions Microsoft Entra doivent être authentifiées par un contrôleur de domaine Active Directory. • Les utilisateurs de domaine Active Directory doivent pouvoir utiliser la réinitialisation de mot de passe en libre-service de Microsoft Entra (SSPR). • Minimiser les efforts administratifs. Que devez-vous utiliser pour chaque exigence ? Pour répondre, sélectionnez les options appropriées dans la zone de réponse. REMARQUE : Chaque sélection correcte vaut un point.",
+        "answers": [],
+        "correctAnswer": ""
+    },
+    {
+        "id": "question-139",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Vous avez un abonnement Azure nommé Sub1 qui est lié à un tenant Microsoft Entra. Le tenant contient les utilisateurs indiqués dans le tableau suivant. Sub1 contient un groupe de ressources nommé RG1. Le tenant contient les groupes indiqués dans le tableau suivant. Vous déployez une machine virtuelle nommée VM1 dans RG1. VM1 exécute Windows Server et dispose de la connexion Microsoft Entra activée. Pour chacune des affirmations suivantes, sélectionnez Oui si l'affirmation est vraie. Sinon, sélectionnez Non. REMARQUE : Chaque sélection correcte vaut un point.",
+        "answers": [],
+        "correctAnswer": ""
+    },
+    {
+        "id": "question-140",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Vous avez un abonnement Azure qui contient la machine virtuelle suivante : • Nom : V1 • Région Azure : East US • Identité gérée attribuée au système : Désactivée Vous créez les identités gérées indiquées dans le tableau suivant. Vous effectuez les actions suivantes : • Assigner Managed1 à V1. • Créer un groupe de ressources nommé RG1 dans la région West US. Pour chacune des affirmations suivantes, sélectionnez Oui si l'affirmation est vraie. Sinon, sélectionnez Non. REMARQUE : Chaque sélection correcte vaut un point.",
+        "answers": [],
+        "correctAnswer": ""
+    },
+    {
+        "id": "question-141",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Vous disposez d’un abonnement Azure qui contient les coffres de clés indiqués dans le tableau suivant. L’abonnement contient les utilisateurs indiqués dans le tableau suivant. Le 1er juin, Admin4 effectue les actions suivantes : • Supprime un certificat nommé Certificate1 de KeyVault1 • Supprime un secret nommé Secret1 de KeyVault2 Pour chacune des affirmations suivantes, sélectionnez Oui si l’affirmation est vraie. Sinon, sélectionnez Non. REMARQUE : Chaque sélection correcte vaut un point.",
+        "answers": [],
+        "correctAnswer": ""
+    },
+    {
+        "id": "question-142",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Vous avez un groupe de gestion nommé Group1 qui contient deux abonnements Azure nommés Sub1 et Sub2. Les abonnements sont liés à un locataire Microsoft Entra qui contient un utilisateur nommé User1. Vous devez vous assurer que User1 peut intégrer Sub1 à Permissions Management. La solution doit respecter le principe du moindre privilège. Quelle permission devez-vous accorder à User1 ?",
+        "answers": [
+            {
+                "id": "A",
+                "text": "Microsoft.Authorization/roleAssignments/read pour Sub1"
+            },
+            {
+                "id": "B",
+                "text": "Microsoft.Authorization/roleAssignments/write pour Group1"
+            },
+            {
+                "id": "C",
+                "text": "Microsoft.Authorization/roleAssignments/write pour Sub1"
+            },
+            {
+                "id": "D",
+                "text": "Microsoft.Authorization/roleAssignments/read pour Group1"
+            }
+        ],
+        "correctAnswer": "C"
+    },
+    {
+        "id": "question-143",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Vous disposez d'un locataire Azure Active Directory (Azure AD).Vous configurez la réinitialisation de mot de passe en libre-service (SSPR) en utilisant les paramètres suivants : • Exiger que les utilisateurs s'enregistrent lors de la connexion : Oui • Nombre de méthodes requis pour réinitialiser : 1 Quelle est une méthode d'authentification valide disponible pour les utilisateurs ?",
+        "answers": [
+            {
+                "id": "A",
+                "text": "une carte à puce"
+            },
+            {
+                "id": "B",
+                "text": "un code d'application mobile"
+            },
+            {
+                "id": "C",
+                "text": "une notification d'application mobile"
+            },
+            {
+                "id": "D",
+                "text": "un e-mail envoyé à une adresse externe à votre organisation"
+            }
+        ],
+        "correctAnswer": "B"
+    },
+    {
+        "id": "question-144",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Vous créez un nouveau locataire Microsoft 365 E5. Vous devez vous assurer que lorsque les utilisateurs se connectent au portail Microsoft 365 à partir d'une adresse IP anonyme, ils reçoivent une invite à utiliser l'authentification multifactorielle (MFA).Que devez-vous configurer ?",
+        "answers": [
+            {
+                "id": "A",
+                "text": "une stratégie de risque de connexion"
+            },
+            {
+                "id": "B",
+                "text": "une stratégie de risque utilisateur"
+            },
+            {
+                "id": "C",
+                "text": "une stratégie d'enregistrement MFA"
+            }
+        ],
+        "correctAnswer": "A"
+    },
+    {
+        "id": "question-145",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Vous disposez d’un locataire Microsoft 365. Vous configurez une stratégie d’accès conditionnel comme indiqué dans l’exemple de stratégie d’accès conditionnel. (Cliquez sur l’onglet Stratégie d’accès conditionnel.) Vous consultez les paramètres du rôle d'administrateur utilisateur comme indiqué dans l'exemple des détails des paramètres de rôle. (Cliquez sur l'onglet Détails des paramètres de rôle.) Vous consultez les affectations de rôles d'administrateur utilisateur comme indiqué dans l'exposition des affectations de rôles. (Cliquez sur l'onglet Affectations de rôles.) Pour chacune des affirmations suivantes, sélectionnez Oui si l'affirmation est vraie. Sinon, sélectionnez Non. REMARQUE : Chaque bonne réponse vaut un point. #145 (Topic: Question Set 2) Q",
+        "answers": [],
+        "correctAnswer": ""
+    },
+    {
+        "id": "question-146",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Vous disposez d'un locataire Azure AD qui contient les utilisateurs indiqués dans le tableau suivant. Vous disposez des stratégies Azure AD Identity Protection indiquées dans le tableau suivant. Vous passez en revue le rapport des utilisateurs à risque et le rapport des connexions à risque et effectuez des actions pour chaque utilisateur comme indiqué dans le tableau suivant. Pour chacune des affirmations suivantes, sélectionnez Oui si l'affirmation est vraie. Sinon, sélectionnez Non. REMARQUE : Chaque sélection correcte vaut un point. uestio #145 (Topic: Q Set 2) Q",
+        "answers": [],
+        "correctAnswer": ""
+    },
+    {
+        "id": "question-147",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Vous disposez d'un abonnement Azure contenant un utilisateur nommé User1.Vous devez respecter les exigences suivantes : • Empêcher User1 d'être ajouté en tant que propriétaire des applications nouvellement enregistrées. • S'assurer que User1 peut gérer les paramètres du proxy d'application. • S'assurer que User1 peut enregistrer des applications. • Utiliser le principe du moindre privilège.Quel rôle devez-vous attribuer à User1 ?",
+        "answers": [
+            {
+                "id": "A",
+                "text": "Développeur d'application"
+            },
+            {
+                "id": "B",
+                "text": "Administrateur d'application cloud"
+            },
+            {
+                "id": "C",
+                "text": "Administrateur du support de service"
+            },
+            {
+                "id": "D",
+                "text": "Administrateur d'application"
+            }
+        ],
+        "correctAnswer": "D"
+    },
+    {
+        "id": "question-148",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "GLISSER-DÉPOSER Vous avez un abonnement Microsoft 365 E5 et un abonnement Azure.Vous devez répondre aux exigences suivantes : • Assurer que les utilisateurs puissent se connecter aux machines virtuelles Azure en utilisant leurs identifiants Microsoft 365. • Déléguer la possibilité de créer de nouvelles machines virtuelles.Que devriez-vous utiliser pour chaque exigence ? Pour répondre, faites glisser les fonctionnalités appropriées vers les exigences correctes. Chaque fonctionnalité peut être utilisée une fois, plusieurs fois ou pas du tout. Vous devrez peut-être faire glisser la barre de séparation entre les panneaux ou faire défiler pour voir le contenu. REMARQUE : Chaque sélection correcte vaut un point. Q",
+        "answers": [],
+        "correctAnswer": ""
+    },
+    {
+        "id": "question-149",
+        "certificationId": "SC-300",
+        "type": "singleChoice",
+        "question": "Vous disposez d'un locataire Microsoft 365.Tous les utilisateurs possèdent des téléphones mobiles et des ordinateurs portables sous Windows 10. Les utilisateurs travaillent fréquemment depuis des endroits éloignés qui n'ont pas accès au Wi-Fi ni à la connectivité téléphonique mobile. Lorsqu'ils travaillent depuis ces emplacements éloignés, les utilisateurs connectent leur ordinateur portable à un réseau filaire disposant d'un accès à Internet. Vous prévoyez de mettre en œuvre l'authentification multifacteur (MFA). Quelle méthode d'authentification MFA les utilisateurs peuvent-ils utiliser depuis l'emplacement distant ?",
+        "answers": [
+            {
+                "id": "A",
+                "text": "un code de vérification provenant de l'application Microsoft Authenticator"
+            },
+            {
+                "id": "B",
+                "text": "SMS"
+            },
+            {
+                "id": "C",
+                "text": "un mot de passe d'application"
+            },
+            {
+                "id": "D",
+                "text": "une notification via l'application Microsoft Authenticator"
+            }
+        ],
+        "correctAnswer": "A"
+    }
+]
