@@ -16,6 +16,8 @@ import ExamFinishDialog from "../../components/exam/ExamFinishDialog";
 import { ExamEngine } from "../../engine/ExamEngine";
 import { ExamSession as EngineSession } from "../../engine/ExamSession";
 
+import { ExamContext } from "../../contexts/ExamContext";
+
 export default function ExamSession() {
 
     const { id } = useParams();
@@ -111,141 +113,143 @@ export default function ExamSession() {
 
     return (
 
-        <Container
-            maxWidth="md"
-            sx={{ py: 5 }}
-        >
+        <ExamContext.Provider value={engine.current}>
 
-            <Typography
-                variant="h4"
-                fontWeight="bold"
-                gutterBottom
+            <Container
+                maxWidth="md"
+                sx={{ py: 5 }}
             >
 
-                {id?.toUpperCase()} Exam
+                <Typography
+                    variant="h4"
+                    fontWeight="bold"
+                    gutterBottom
+                >
 
-            </Typography>
+                    {id?.toUpperCase()} Exam
 
-            <Typography
-                color="text.secondary"
-                sx={{ mb: 2 }}
-            >
+                </Typography>
 
-                Question {session.currentQuestion + 1}
-                {" / "}
-                {session.questions.length}
+                <Typography
+                    color="text.secondary"
+                    sx={{ mb: 2 }}
+                >
 
-            </Typography>
+                    Question {session.currentQuestion + 1}
+                    {" / "}
+                    {session.questions.length}
 
-            <LinearProgress
-                variant="determinate"
-                value={progress}
-                sx={{
-                    mb: 4,
-                    height: 10,
-                    borderRadius: 5
-                }}
-            />
+                </Typography>
 
-            <Paper
-                elevation={3}
-                sx={{
-                    p: 4,
-                    borderRadius: 3
-                }}
-            >
+                <LinearProgress
+                    variant="determinate"
+                    value={progress}
+                    sx={{
+                        mb: 4,
+                        height: 10,
+                        borderRadius: 5
+                    }}
+                />
 
-                <QuestionRenderer
+                <Paper
+                    elevation={3}
+                    sx={{
+                        p: 4,
+                        borderRadius: 3
+                    }}
+                >
 
-                    question={currentQuestion}
+                    <QuestionRenderer
+                        question={currentQuestion}
+                    />
+
+                </Paper>
+
+                <Box
+
+                    sx={{
+
+                        display: "flex",
+
+                        justifyContent: "space-between",
+
+                        mt: 4
+
+                    }}
+
+                >
+
+                    <Button
+
+                        variant="outlined"
+
+                        disabled={
+
+                            session.currentQuestion === 0
+
+                        }
+
+                        onClick={handlePrevious}
+
+                    >
+
+                        Précédent
+
+                    </Button>
+
+                    <Button
+
+                        variant="contained"
+
+                        onClick={handleNext}
+
+                    >
+
+                        {
+
+                            session.currentQuestion ===
+
+                            session.questions.length - 1
+
+                                ? "Terminer"
+
+                                : "Suivant"
+
+                        }
+
+                    </Button>
+
+                </Box>
+
+                <ExamFinishDialog
+
+                    open={finishDialogOpen}
+
+                    answered={
+
+                        Object.keys(session.answers).length
+
+                    }
+
+                    total={
+
+                        session.questions.length
+
+                    }
+
+                    onCancel={() =>
+
+                        setFinishDialogOpen(false)
+
+                    }
+
+                    onConfirm={handleFinishExam}
 
                 />
 
-            </Paper>
+            </Container>
 
-            <Box
-
-                sx={{
-
-                    display: "flex",
-
-                    justifyContent: "space-between",
-
-                    mt: 4
-
-                }}
-
-            >
-
-                <Button
-
-                    variant="outlined"
-
-                    disabled={
-
-                        session.currentQuestion === 0
-
-                    }
-
-                    onClick={handlePrevious}
-
-                >
-
-                    Précédent
-
-                </Button>
-
-                <Button
-
-                    variant="contained"
-
-                    onClick={handleNext}
-
-                >
-
-                    {
-
-                        session.currentQuestion ===
-
-                        session.questions.length - 1
-
-                            ? "Terminer"
-
-                            : "Suivant"
-
-                    }
-
-                </Button>
-
-            </Box>
-
-            <ExamFinishDialog
-
-                open={finishDialogOpen}
-
-                answered={
-
-                    Object.keys(session.answers).length
-
-                }
-
-                total={
-
-                    session.questions.length
-
-                }
-
-                onCancel={() =>
-
-                    setFinishDialogOpen(false)
-
-                }
-
-                onConfirm={handleFinishExam}
-
-            />
-
-        </Container>
+        </ExamContext.Provider>
 
     );
 
