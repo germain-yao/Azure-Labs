@@ -3,6 +3,11 @@ import type { Question } from "../types/question";
 export class ExamSession {
 
     /**
+     * Certification en cours.
+     */
+    public certification = "";
+
+    /**
      * Questions de l'examen.
      */
     public questions: Question[] = [];
@@ -34,7 +39,7 @@ export class ExamSession {
     public finishedAt?: Date;
 
     /**
-     * Marque ou retire une question des favoris.
+     * Marque ou retire une question.
      */
     public toggleMark(questionId: string): void {
 
@@ -42,7 +47,8 @@ export class ExamSession {
 
             this.markedQuestions.delete(questionId);
 
-        } else {
+        }
+        else {
 
             this.markedQuestions.add(questionId);
 
@@ -69,9 +75,39 @@ export class ExamSession {
     }
 
     /**
+     * Nombre de réponses.
+     */
+    public getAnsweredCount(): number {
+
+        return Object.keys(this.answers).length;
+
+    }
+
+    /**
+     * Pourcentage de progression.
+     */
+    public getProgress(): number {
+
+        if (this.questions.length === 0) {
+
+            return 0;
+
+        }
+
+        return Math.round(
+
+            ((this.currentQuestion + 1) / this.questions.length) * 100
+
+        );
+
+    }
+
+    /**
      * Réinitialise complètement la session.
      */
     public reset(): void {
+
+        this.certification = "";
 
         this.questions = [];
 

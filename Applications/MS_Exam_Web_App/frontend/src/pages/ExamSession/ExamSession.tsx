@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 
 import {
     Box,
@@ -13,14 +13,15 @@ import {
 import QuestionRenderer from "../../components/questions/QuestionRenderer";
 import ExamFinishDialog from "../../components/exam/ExamFinishDialog";
 
+import { ExamContext } from "../../contexts/ExamContext";
 import { ExamEngine } from "../../engine/ExamEngine";
 import { ExamSession as EngineSession } from "../../engine/ExamSession";
-
-import { ExamContext } from "../../contexts/ExamContext";
 
 export default function ExamSession() {
 
     const { id } = useParams();
+
+    const navigate = useNavigate();
 
     const engine = useRef(new ExamEngine());
 
@@ -40,7 +41,11 @@ export default function ExamSession() {
 
         );
 
-        setSession({ ...startedSession });
+        setSession({
+
+            ...startedSession
+
+        });
 
     }, [id]);
 
@@ -52,6 +57,24 @@ export default function ExamSession() {
 
     const currentQuestion =
         engine.current.getCurrentQuestion();
+
+    if (!currentQuestion) {
+
+        return (
+
+            <Container sx={{ py: 5 }}>
+
+                <Typography>
+
+                    Chargement des questions...
+
+                </Typography>
+
+            </Container>
+
+        );
+
+    }
 
     const progress =
         engine.current.getProgress();
@@ -103,11 +126,11 @@ export default function ExamSession() {
         const result =
             engine.current.finish();
 
-        alert(
+        navigate("/exam-result", {
 
-            `Score : ${result.score}%`
+            state: result
 
-        );
+        });
 
     };
 
@@ -126,7 +149,7 @@ export default function ExamSession() {
                     gutterBottom
                 >
 
-                    {id?.toUpperCase()} Exam
+                    {(session.certification ?? id ?? "").toUpperCase()} Exam
 
                 </Typography>
 
@@ -166,31 +189,19 @@ export default function ExamSession() {
                 </Paper>
 
                 <Box
-
                     sx={{
-
                         display: "flex",
-
                         justifyContent: "space-between",
-
                         mt: 4
-
                     }}
-
                 >
 
                     <Button
-
                         variant="outlined"
-
                         disabled={
-
                             session.currentQuestion === 0
-
                         }
-
                         onClick={handlePrevious}
-
                     >
 
                         Précédent
@@ -198,11 +209,8 @@ export default function ExamSession() {
                     </Button>
 
                     <Button
-
                         variant="contained"
-
                         onClick={handleNext}
-
                     >
 
                         {
@@ -226,21 +234,15 @@ export default function ExamSession() {
                     open={finishDialogOpen}
 
                     answered={
-
                         Object.keys(session.answers).length
-
                     }
 
                     total={
-
                         session.questions.length
-
                     }
 
                     onCancel={() =>
-
                         setFinishDialogOpen(false)
-
                     }
 
                     onConfirm={handleFinishExam}

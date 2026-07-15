@@ -1,24 +1,19 @@
 import type { Question } from "../types/question";
-
-export interface ExamResult {
-
-    total: number;
-
-    correct: number;
-
-    incorrect: number;
-
-    score: number;
-
-}
+import type { ExamResult } from "../models/ExamResult";
 
 export class ResultCalculator {
 
     public calculate(
 
+        certification: string,
+
         questions: Question[],
 
-        answers: Record<string, string | string[]>
+        answers: Record<string, string | string[]>,
+
+        startedAt: Date,
+
+        finishedAt: Date
 
     ): ExamResult {
 
@@ -42,19 +37,65 @@ export class ResultCalculator {
 
         });
 
+        const total = questions.length;
+
+        const answered = Object.keys(answers).length;
+
+        const incorrect = total - correct;
+
+        const score = Math.round(
+
+            (correct / total) * 100
+
+        );
+
+        const durationMs =
+
+            finishedAt.getTime() -
+
+            startedAt.getTime();
+
+        const hours = Math.floor(durationMs / 3600000);
+
+        const minutes = Math.floor(
+
+            (durationMs % 3600000) / 60000
+
+        );
+
+        const seconds = Math.floor(
+
+            (durationMs % 60000) / 1000
+
+        );
+
+        const duration =
+
+            `${hours.toString().padStart(2, "0")}:` +
+
+            `${minutes.toString().padStart(2, "0")}:` +
+
+            `${seconds.toString().padStart(2, "0")}`;
+
         return {
 
-            total: questions.length,
+            certification,
+
+            total,
+
+            answered,
 
             correct,
 
-            incorrect: questions.length - correct,
+            incorrect,
 
-            score: Math.round(
+            score,
 
-                (correct / questions.length) * 100
+            startedAt,
 
-            )
+            finishedAt,
+
+            duration
 
         };
 

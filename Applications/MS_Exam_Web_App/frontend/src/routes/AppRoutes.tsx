@@ -8,7 +8,7 @@ import Dashboard from "../pages/Dashboard/Dashboard";
 import ExamCatalog from "../pages/ExamCatalog/ExamCatalog";
 import ExamDetails from "../pages/ExamDetails/ExamDetails";
 import ExamSession from "../pages/ExamSession/ExamSession";
-import Results from "../pages/Results/Results";
+import ExamResult from "../pages/ExamResult/ExamResult";
 import History from "../pages/History/History";
 import Admin from "../pages/Admin/Admin";
 import NotFound from "../pages/NotFound/NotFound";
@@ -49,8 +49,8 @@ export default function AppRoutes() {
                     />
 
                     <Route
-                        path="/results"
-                        element={<Results />}
+                        path="/exam-result"
+                        element={<ExamResult />}
                     />
 
                     <Route

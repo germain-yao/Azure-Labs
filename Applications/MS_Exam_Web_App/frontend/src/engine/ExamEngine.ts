@@ -22,6 +22,8 @@ export class ExamEngine {
 
         this.session.reset();
 
+        this.session.certification = certification;
+
         this.session.questions =
             this.randomizer.take(
                 questions,
@@ -62,8 +64,11 @@ export class ExamEngine {
     public next(): void {
 
         if (
+
             this.session.currentQuestion <
+
             this.session.questions.length - 1
+
         ) {
 
             this.session.currentQuestion++;
@@ -75,7 +80,9 @@ export class ExamEngine {
     public previous(): void {
 
         if (
+
             this.session.currentQuestion > 0
+
         ) {
 
             this.session.currentQuestion--;
@@ -95,11 +102,17 @@ export class ExamEngine {
     public getProgress(): number {
 
         return Math.round(
+
             (
+
                 (this.session.currentQuestion + 1)
+
                 /
+
                 this.session.questions.length
+
             ) * 100
+
         );
 
     }
@@ -109,8 +122,17 @@ export class ExamEngine {
         this.session.finishedAt = new Date();
 
         return this.calculator.calculate(
+
+            this.session.certification,
+
             this.session.questions,
-            this.session.answers
+
+            this.session.answers,
+
+            this.session.startedAt,
+
+            this.session.finishedAt
+
         );
 
     }
