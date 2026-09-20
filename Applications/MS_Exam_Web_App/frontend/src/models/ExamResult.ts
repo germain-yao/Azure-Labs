@@ -1,3 +1,5 @@
+import type { Question } from "../types/question";
+
 export interface ExamResult {
 
     certification: string;
@@ -17,5 +19,16 @@ export interface ExamResult {
     finishedAt: Date;
 
     duration: string;
+
+    /**
+     * Questions utilisées pendant l'examen.
+     */
+    questions: Question[];
+
+    /**
+     * Réponses données par l'utilisateur.
+     * Clé = questionId
+     */
+    answers: Record<string, string | string[]>;
 
 }

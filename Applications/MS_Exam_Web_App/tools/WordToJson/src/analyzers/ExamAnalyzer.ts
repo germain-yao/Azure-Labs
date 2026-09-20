@@ -1,13 +1,9 @@
-import {
-    QuestionClassifier,
-    QuestionType
-} from "../classifiers/QuestionClassifier";
+import { Question } from "../models/Question";
+import { QuestionType } from "../classifiers/QuestionClassifier";
 
 export class ExamAnalyzer {
 
-    private classifier = new QuestionClassifier();
-
-    public analyze(blocks: string[]): void {
+    public analyze(questions: Question[]): void {
 
         console.log("");
         console.log("======================================");
@@ -15,23 +11,21 @@ export class ExamAnalyzer {
         console.log("======================================");
         console.log("");
 
-        console.log(`Nombre de questions : ${blocks.length}`);
+        console.log(`Nombre de questions : ${questions.length}`);
         console.log("");
 
-        const statistics = new Map<QuestionType, number>();
+        const statistics = new Map<string, number>();
 
         const unknownQuestions: number[] = [];
 
-        blocks.forEach((block, index) => {
-
-            const type = this.classifier.classify(block);
+        questions.forEach((question, index) => {
 
             statistics.set(
-                type,
-                (statistics.get(type) ?? 0) + 1
+                question.type,
+                (statistics.get(question.type) ?? 0) + 1
             );
 
-            if (type === QuestionType.Unknown) {
+            if (question.type === QuestionType.Unknown) {
 
                 unknownQuestions.push(index + 1);
 
@@ -44,10 +38,8 @@ export class ExamAnalyzer {
 
         Object.values(QuestionType).forEach(type => {
 
-            const count = statistics.get(type) ?? 0;
-
             console.log(
-                `${type.padEnd(18)} : ${count}`
+                `${type.padEnd(18)} : ${statistics.get(type) ?? 0}`
             );
 
         });
@@ -58,15 +50,10 @@ export class ExamAnalyzer {
         console.log("--------------------------------------");
 
         console.log("✅ Single Choice");
-
         console.log("✅ Multiple Choice");
-
         console.log("🚧 Drag & Drop");
-
         console.log("🚧 Hotspot");
-
         console.log("🚧 Case Study");
-
         console.log("🚧 Series");
 
         console.log("");

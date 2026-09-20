@@ -1,24 +1,7 @@
 import { Question } from "../models/Question";
-
 import { QuestionType } from "../classifiers/QuestionClassifier";
 
-import { SingleChoiceValidator } from "./SingleChoiceValidator";
-import { MultipleChoiceValidator } from "./MultipleChoiceValidator";
-import { DragDropValidator } from "./DragDropValidator";
-import { HotspotValidator } from "./HotspotValidator";
-import { CaseStudyValidator } from "./CaseStudyValidator";
-
 export class QuestionValidator {
-
-    private singleChoiceValidator = new SingleChoiceValidator();
-
-    private multipleChoiceValidator = new MultipleChoiceValidator();
-
-    private dragDropValidator = new DragDropValidator();
-
-    private hotspotValidator = new HotspotValidator();
-
-    private caseStudyValidator = new CaseStudyValidator();
 
     public validate(questions: Question[]): boolean {
 
@@ -27,56 +10,89 @@ export class QuestionValidator {
 
         let valid = true;
 
-        for (const question of questions) {
+        questions.forEach(question => {
 
             switch (question.type) {
 
                 case QuestionType.SingleChoice:
 
-                    valid = this.singleChoiceValidator.validate(question) && valid;
-
+                    valid = this.validateSingle(question) && valid;
                     break;
 
                 case QuestionType.MultipleChoice:
 
-                    valid = this.multipleChoiceValidator.validate(question) && valid;
-
-                    break;
-
-                case QuestionType.DragDrop:
-
-                    valid = this.dragDropValidator.validate(question) && valid;
-
-                    break;
-
-                case QuestionType.Hotspot:
-
-                    valid = this.hotspotValidator.validate(question) && valid;
-
-                    break;
-
-                case QuestionType.CaseStudy:
-
-                case QuestionType.Series:
-
-                    valid = this.caseStudyValidator.validate(question) && valid;
-
+                    valid = this.validateMultiple(question) && valid;
                     break;
 
                 default:
 
-                    console.log(`⚠ ${question.id} : type inconnu`);
-
-                    valid = false;
-
+                    // Les autres types seront validés plus tard.
                     break;
 
             }
 
-        }
+        });
 
         console.log("===============================");
         console.log("");
+
+        return valid;
+
+    }
+
+    private validateSingle(question: Question): boolean {
+
+        let valid = true;
+
+        if (!question.question.trim()) {
+
+            console.log(`❌ ${question.id} : question vide`);
+            valid = false;
+
+        }
+
+        if (!question.answers || question.answers.length < 2) {
+
+            console.log(`❌ ${question.id} : moins de 2 réponses`);
+            valid = false;
+
+        }
+
+        if (typeof question.correctAnswer !== "string") {
+
+            console.log(`❌ ${question.id} : réponse simple attendue`);
+            valid = false;
+
+        }
+
+        return valid;
+
+    }
+
+    private validateMultiple(question: Question): boolean {
+
+        let valid = true;
+
+        if (!question.question.trim()) {
+
+            console.log(`❌ ${question.id} : question vide`);
+            valid = false;
+
+        }
+
+        if (!question.answers || question.answers.length < 2) {
+
+            console.log(`❌ ${question.id} : moins de 2 réponses`);
+            valid = false;
+
+        }
+
+        if (!Array.isArray(question.correctAnswer)) {
+
+            console.log(`❌ ${question.id} : réponses multiples attendues`);
+            valid = false;
+
+        }
 
         return valid;
 

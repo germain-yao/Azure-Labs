@@ -9,6 +9,7 @@ import ExamCatalog from "../pages/ExamCatalog/ExamCatalog";
 import ExamDetails from "../pages/ExamDetails/ExamDetails";
 import ExamSession from "../pages/ExamSession/ExamSession";
 import ExamResult from "../pages/ExamResult/ExamResult";
+import Review from "../pages/Review/Review";
 import History from "../pages/History/History";
 import Admin from "../pages/Admin/Admin";
 import NotFound from "../pages/NotFound/NotFound";
@@ -51,6 +52,11 @@ export default function AppRoutes() {
                     <Route
                         path="/exam-result"
                         element={<ExamResult />}
+                    />
+
+                    <Route
+                        path="/review"
+                        element={<Review />}
                     />
 
                     <Route

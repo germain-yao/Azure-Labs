@@ -33,13 +33,14 @@ export default function ExamSession() {
 
     useEffect(() => {
 
-        const startedSession = engine.current.start(
+        const startedSession =
+            engine.current.start(
 
-            id ?? "sc-300",
+                id ?? "sc-300",
 
-            60
+                60
 
-        );
+            );
 
         setSession({
 
@@ -128,7 +129,15 @@ export default function ExamSession() {
 
         navigate("/exam-result", {
 
-            state: result
+            state: {
+
+                ...result,
+
+                questions: session.questions,
+
+                answers: session.answers
+
+            }
 
         });
 

@@ -110,52 +110,31 @@ export default function ExamResult() {
 
                     <Typography variant="h6">
 
-                        Questions répondues :
-
-                        {" "}
-
-                        {result.answered}
-
-                        /
-
-                        {result.total}
+                        Questions répondues : {result.answered} / {result.total}
 
                     </Typography>
 
                     <Typography variant="h6">
 
-                        Temps :
-
-                        {" "}
-
-                        {result.duration}
+                        Temps : {result.duration}
 
                     </Typography>
 
                 </Stack>
 
                 <Box
-
                     sx={{
-
                         mt: 6,
-
                         display: "flex",
-
                         justifyContent: "space-between",
-
-                        gap: 2
-
+                        gap: 2,
+                        flexWrap: "wrap"
                     }}
-
                 >
 
                     <Button
-
                         variant="outlined"
-
                         onClick={() => navigate("/exams")}
-
                     >
 
                         Retour au catalogue
@@ -163,19 +142,26 @@ export default function ExamResult() {
                     </Button>
 
                     <Button
-
                         variant="contained"
-
+                        color="secondary"
                         onClick={() =>
-
-                            navigate(
-
-                                `/exam-session/${result.certification.toLowerCase()}`
-
-                            )
-
+                            navigate("/review", {
+                                state: result
+                            })
                         }
+                    >
 
+                        Voir la correction
+
+                    </Button>
+
+                    <Button
+                        variant="contained"
+                        onClick={() =>
+                            navigate(
+                                `/exam-session/${result.certification.toLowerCase()}`
+                            )
+                        }
                     >
 
                         Recommencer
